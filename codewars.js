@@ -76,3 +76,25 @@ filteredArray5 = filteredArray4.filter(g => g !== 'Steinbacher')
   return filteredArray5
   
 };
+
+
+// It's a well known fact that anything Chuck Norris wants, he gets. As a result Chuck very rarely has to use the word false.
+
+// It is a less well known fact that if something is true, and Chuck doesn't want it to be, Chuck can scare the truth with his massive biceps, and it automatically becomes false.
+
+// Your task is to be more like Chuck (ha! good luck!). You must return false without ever actually using the word false...
+
+// Go show some truth who's boss!
+
+function ifChuckSaysSo(){
+  return !true
+  }
+
+
+  // Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+  function countSheeps(arrayOfSheep) {
+    // TODO May the force be with you
+  const count = arrayOfSheep.filter(Boolean).length;
+    return count
+  }

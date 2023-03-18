@@ -58,3 +58,21 @@ function popElement(arr){
   arr.pop()
   return arr
 }
+
+
+// Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  
+  // return an array containing all of the strings in the input array except those that match strings in geese
+  
+filteredArray = birds.filter(e => e !== 'African')
+filteredArray2 = filteredArray.filter(b => b !== 'Roman Tufted')
+filteredArray3 = filteredArray2.filter(c => c !== 'Toulouse')
+filteredArray4 = filteredArray3.filter(d => d !== 'Pilgrim')
+filteredArray5 = filteredArray4.filter(g => g !== 'Steinbacher')
+
+  return filteredArray5
+  
+};

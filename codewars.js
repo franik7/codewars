@@ -220,7 +220,7 @@ function repeatStr(n, s) {
 		return bag;
 	  }
 
-
+	
 	  //Training JS #12: loop statement --for..in and for..of
 	  
 	  function giveMeFive(obj){

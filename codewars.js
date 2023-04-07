@@ -122,3 +122,82 @@ function repeatStr(n, s) {
 	function multiply(a, b) {
 		return a * b
 	}
+
+	
+	
+	//Training JS #5: Basic data types--Object
+
+	function animal(obj){
+
+		var obj = {name:obj.name,
+				   legs: obj.legs,
+				   color: obj.color
+				  }
+		  
+		return(`This ${obj.color} ${obj.name} has ${obj.legs} legs.`)
+		
+	  }
+
+
+	//#6: Basic data types--Boolean and conditional statements if..else
+
+	function trueOrFalse(val){
+		if (val)  return "true";             
+		else    return "false";
+	  }
+
+
+	//   Training JS #7: if..else and ternary operator
+
+	function saleHotdogs(n){
+		if(n < 5) {
+		   return n * 100
+		   } else if (n >= 5 && n < 10) {
+			 return n * 95
+		   } else if (n >= 10) {
+			  return n * 90
+		   }
+	  }
+
+
+	//   Training JS #8: Conditional statement--switch
+
+	function howManydays(month){
+		var days;
+		switch (month){
+		  case 2: 
+			days = 28
+			break
+		  case 4:
+		  days = 30
+		  break
+			 case 6:
+		  days = 30
+		  break
+			 case 9:
+		  days = 30
+		  break
+			 case 11:
+		  days = 30
+		  break
+		  default:
+			days = 31
+			
+		}
+		return days;
+	  }
+
+
+	  //Training JS #10: loop statement --for
+
+	  function pickIt(arr){
+		var odd=[],even=[];
+		//coding here
+		for(i = 0; i < arr.length; i++){
+		  if (arr[i] % 2 === 0) {
+			even.push(arr[i])
+		  } else odd.push(arr[i])
+		}
+		
+		return [odd,even];
+	  }

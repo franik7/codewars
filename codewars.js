@@ -201,3 +201,42 @@ function repeatStr(n, s) {
 		
 		return [odd,even];
 	  }
+	
+	//Training JS #11: loop statement --break,continue
+
+	  function grabDoll(dolls){
+		var bag=[];
+		//coding here
+		for (let i = 0; i < dolls.length; i++){
+		  if(dolls[i] == "Hello Kitty" || dolls[i] == "Barbie doll"){
+			bag.push(dolls[i])
+		  } else continue
+		  
+		  if (bag.length === 3){
+		  break
+		} 
+		}
+	   
+		return bag;
+	  }
+
+
+	  //Training JS #12: loop statement --for..in and for..of
+	  
+	  function giveMeFive(obj){
+		//coding here
+		let arr = []
+		for (key in obj){
+		  let keyLength = key.length
+		  if (keyLength == 5) {
+			arr.push(key)
+		  }
+		}
+		for (key in obj){
+		  let valueLength = obj[key].length
+		  if (valueLength == 5) {
+			arr.push(obj[key])
+		  }
+		}
+		return arr
+	  }

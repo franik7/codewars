@@ -226,18 +226,15 @@ function repeatStr(n, s) {
 	  function giveMeFive(obj){
 		//coding here
 		let arr = []
-    
-    
 		for (key in obj){
 		  let keyLength = key.length
-      let valueLength = obj[key].length
-		  
-      if (keyLength == 5) {
-			arr.push(key)
-     }
-      if (valueLength == 5) {
-			arr.push(obj[key]) 
-		}
-		}
+     		  let valueLength = obj[key].length
+     			 if (keyLength == 5) {
+				arr.push(key)
+    			 }
+      			if (valueLength == 5) {
+				arr.push(obj[key]) 
+			 }
+		    }
 		return arr
 	  }

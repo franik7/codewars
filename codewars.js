@@ -221,22 +221,23 @@ function repeatStr(n, s) {
 	  }
 
 	
-	  //Training JS #12: loop statement --for..in and for..of
-	  
+		  //Training JS #12: loop statement --for..in and for..of
+
 	  function giveMeFive(obj){
 		//coding here
 		let arr = []
+    
+    
 		for (key in obj){
 		  let keyLength = key.length
-		  if (keyLength == 5) {
+      let valueLength = obj[key].length
+		  
+      if (keyLength == 5) {
 			arr.push(key)
-		  }
+     }
+      if (valueLength == 5) {
+			arr.push(obj[key]) 
 		}
-		for (key in obj){
-		  let valueLength = obj[key].length
-		  if (valueLength == 5) {
-			arr.push(obj[key])
-		  }
 		}
 		return arr
 	  }

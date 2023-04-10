@@ -261,3 +261,29 @@ function repeatStr(n, s) {
 	  	}
 		}
 	 	 whatNumberIsIt()
+
+	
+	 // Training JS #14: Methods of Number 
+		 //object--toString() and toLocaleString()
+
+		 function colorOf(r,g,b){
+			//coding here
+			
+			var k =  r.toString(16)
+			var l =  g.toString(16)
+			var m =  b.toString(16)
+			
+			  if (k.length < 2){
+				var k = "0" + k
+			  }  
+	
+			  if (l.length < 2){
+				var l = "0" + l
+			  }  
+			  if (m.length < 2){
+				 var m = "0" + m
+			  }  
+			  
+		  return ("#" + k+ l+ m)
+			
+		  }

@@ -287,3 +287,7 @@ function repeatStr(n, s) {
 		  return ("#" + k+ l+ m)
 			
 		  }
+	
+	
+	 //Training JS #15: Methods of Number 
+		  // object--toFixed(), toExponential() and toPrecision()

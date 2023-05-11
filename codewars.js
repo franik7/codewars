@@ -316,3 +316,10 @@ function repeatStr(n, s) {
 			} 
 			return total
 			}
+	
+	// Reverse List Order
+
+		function reverseList(list) {
+		let listReverse = list.reverse()
+		return listReverse
+		}	

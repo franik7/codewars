@@ -338,3 +338,10 @@ function repeatStr(n, s) {
 			  
 			} return arr
 		  } 
+	
+	 // Convert a String to a Number!
+		  const stringToNumber = function(str){
+			// put your code here
+		   let strToNum = Number(str)
+		   return strToNum
+		  }

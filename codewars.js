@@ -323,3 +323,18 @@ function repeatStr(n, s) {
 		let listReverse = list.reverse()
 		return listReverse
 		}	
+	
+	
+	// Find Multiples of a Number
+
+		function findMultiples(integer, limit) {
+			//your code here
+		   var arr = []
+			for (let i = 1; i<=limit/integer; i++){
+			
+			if(i * integer <= limit){
+			  arr.push(i* integer)
+			}
+			  
+			} return arr
+		  } 

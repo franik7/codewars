@@ -353,3 +353,12 @@ function repeatStr(n, s) {
 			let string = num.toString()
 			return string
 			}
+	
+	//Convert number to reversed array of digits
+		  function digitize(n) {
+			//code here
+			let splitN = n.toString().split('')
+			let splitNum = splitN.map(x => Number(x))
+			let splitNu = splitNum.reverse()
+			return splitNu
+		  }

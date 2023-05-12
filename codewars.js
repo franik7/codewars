@@ -372,3 +372,30 @@ function repeatStr(n, s) {
 				return num * (-1)
 			} else {return 0}
 		  }
+
+	//Sum without highest and lowest number
+		  function sumArray(array) {
+			if (!array || array.length <= 1) {
+			   return 0;
+			 }
+			
+			 let sortedArray = array.sort(function(a, b){return a-b});
+			 let lowestNum = sortedArray[0]
+			 let highestNum = sortedArray[sortedArray.length - 1]
+			 
+			   
+			 let arraySum = 0
+			 for(let i = 0; i<sortedArray.length; i++){
+				
+				 arraySum +=sortedArray[i] 
+			   
+			 }
+			 
+		   return arraySum- lowestNum - highestNum
+		   }
+		   
+		   
+	 //Keep Hydrated!
+		  	function litres(time) {
+			return Math.floor(time/2)
+		  }

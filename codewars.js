@@ -399,3 +399,37 @@ function repeatStr(n, s) {
 		  	function litres(time) {
 			return Math.floor(time/2)
 		  }
+	
+	
+	  //Printer Errors(7kyu)
+		  function printerError(s) {
+			// your code
+		  s = s.split('');
+		  
+		  let goodCounter = 0
+		  let badCounter = 0
+		  
+		  for(let i = 0; i< s.length;i++){
+			if((
+			  s[i] === 'a' ||
+			  s[i] === 'b' ||
+			  s[i] === 'c' ||
+			  s[i] === 'd' ||
+			  s[i] === 'e' ||
+			  s[i] === 'f' ||
+			  s[i] === 'g' ||
+			  s[i] === 'h' ||
+			  s[i] === 'i' ||
+			  s[i] === 'j' ||
+			  s[i] === 'k' ||
+			  s[i] === 'l' ||
+			  s[i] === 'm'
+			)){
+			} else {
+			  badCounter++
+			}
+		  } console.log(goodCounter)
+		  console.log(badCounter)
+		  console.log(s.length)
+		  return (badCounter +"/"+s.length)
+		}

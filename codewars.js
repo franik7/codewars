@@ -439,3 +439,14 @@ function repeatStr(n, s) {
 		function sumStr(a,b) {
 			return (Number(a) + Number(b)).toString()
 		  }
+	
+	
+	 //Remove First and Last Character
+		function removeChar(str){
+			//You got this!
+			 let arr = str.split("")
+			 arr.pop()
+			 arr.shift()
+			 let str2 = arr.join("")
+			 return str2
+		   };

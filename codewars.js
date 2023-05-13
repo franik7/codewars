@@ -433,3 +433,9 @@ function repeatStr(n, s) {
 		  console.log(s.length)
 		  return (badCounter +"/"+s.length)
 		}
+
+	
+	//Sum The Strings
+		function sumStr(a,b) {
+			return (Number(a) + Number(b)).toString()
+		  }

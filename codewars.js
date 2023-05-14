@@ -490,5 +490,14 @@ function repeatStr(n, s) {
 			} else {
 			  return  "F"
 			}
-			
+		  }
+	
+	
+	 //Simple Fun #1: Seats in Theater
+		  function seatsInTheater(nCols, nRows, col, row) {
+			//coding and coding..
+			let x = nCols - col +1
+			let y = nRows - row
+			let a = x*y
+			return a
 		  }

@@ -461,3 +461,15 @@ function repeatStr(n, s) {
 			list.sort((a,b) => b-a)
 			return list[0];
 		}
+		
+		
+	//Is this my tail?
+		function correctTail(body, tail){
+			let splitBody = body.split("")
+			console.log(splitBody)
+			if(splitBody[splitBody.length - 1] == tail){
+			  return true
+			} else {
+			  return false
+			}
+		  }	

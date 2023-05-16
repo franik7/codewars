@@ -501,3 +501,19 @@ function repeatStr(n, s) {
 			let a = x*y
 			return a
 		  }
+	
+	
+	 //Don't give me five! (7 kyu)
+		  function dontGiveMeFive(start, end) {
+			let arr = [];
+			for (let i = start; i <= end; i++) {
+				if (!String(i).includes("5")) {
+				arr.push(i);
+				}
+			}
+			let count = 0
+			for (let k = 0; k < arr.length; k++){
+				count++
+			}
+			return count
+			}

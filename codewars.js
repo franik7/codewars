@@ -502,8 +502,7 @@ function repeatStr(n, s) {
 			return a
 		  }
 	
-	
-	
+
 	 //Don't give me five! (7 kyu)
 		  function dontGiveMeFive(start, end) {
 			let arr = [];

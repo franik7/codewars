@@ -518,3 +518,19 @@ function repeatStr(n, s) {
 			}
 			return count
 			}
+	
+	
+	//Extract Values and Units
+	function valAndUnits(s) {
+
+		  s = s.split("")
+		  console.log(s)
+
+		  for(x of s){
+		    (if type of x ==== "number"){
+
+		    }
+		  }
+
+
+		}

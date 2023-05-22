@@ -545,3 +545,24 @@ function repeatStr(n, s) {
 			let split3 = split2.join("")
 			return Number(split3)
 			}
+	
+	
+	//Disemvowel Trolls (7 kyu)
+		function disemvowel(str) {
+			let split = str.split("")
+			
+			split = split.filter(val => val !== "a");
+			split = split.filter(val => val !== "e");
+			split = split.filter(val => val !== "i");
+			split = split.filter(val => val !== "o");
+			split = split.filter(val => val !== "u");
+			split = split.filter(val => val !== "A");
+			split = split.filter(val => val !== "E");
+			split = split.filter(val => val !== "I");
+			split = split.filter(val => val !== "O");
+			split = split.filter(val => val !== "U");
+			
+			split = split.join("")
+			
+			return(split)
+		  }

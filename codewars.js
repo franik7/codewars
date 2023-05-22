@@ -520,16 +520,19 @@ function repeatStr(n, s) {
 			}
 	
 	
-	//Extract Values and Units
-	function valAndUnits(s) {
-
-		  s = s.split("")
-		  console.log(s)
-
-		  for(x of s){
-		    (if type of x ==== "number"){
-
-		    }
+	//Get the Middle Character (7 kyu)
+		function getMiddle(s){
+			//Code goes here!
+			
+		  let split = s.split("")
+		  
+		  let middleIndex = Math.floor((0 + split.length) / 2)
+			
+		  if(middleIndex % 2 === 0 && split.length % 2 ===0){
+			return(split[middleIndex -1] + split[middleIndex])
+		  } else if(middleIndex % 2 !== 0 && split.length % 2 ===0){
+			return(split[middleIndex -1] + split[middleIndex])
+		  } else {
+			return(split[middleIndex])
 		  }
-
-		}
+		  }

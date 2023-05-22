@@ -536,3 +536,12 @@ function repeatStr(n, s) {
 			return(split[middleIndex])
 		  }
 		  }
+	
+	
+	// Descending Order (7 kyu)
+		function descendingOrder(n){
+			let split = n.toString().split("")
+			let split2 = split.sort((a, b) => b-a);
+			let split3 = split2.join("")
+			return Number(split3)
+			}

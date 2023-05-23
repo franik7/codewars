@@ -561,7 +561,6 @@ function repeatStr(n, s) {
 			split = split.filter(val => val !== "I");
 			split = split.filter(val => val !== "O");
 			split = split.filter(val => val !== "U");
-			
 			split = split.join("")
 			
 			return(split)

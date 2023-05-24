@@ -577,3 +577,17 @@ function repeatStr(n, s) {
 			return joined
 		  }
 	
+	
+	//Vowel Count (7 kyu)
+		function getCount(str) {
+ 
+			let split = str.split("")
+			let sum = 0
+			for (let i = 0 ; i < split.length; i++){
+			  if (split[i] == "a" || split[i] == "e" || split[i] == "i" || split[i] == "o" || split[i] == "u"){
+				sum +=1
+			  }
+				
+			}return sum  
+		  }
+	

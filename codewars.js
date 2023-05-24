@@ -565,3 +565,15 @@ function repeatStr(n, s) {
 			
 			return(split)
 		  }
+	
+	
+	//Reversed Strings
+		function solution(str){
+  
+			let split = str.split("")
+			let reverse = split.reverse()
+			let joined = reverse.join("")
+			
+			return joined
+		  }
+	

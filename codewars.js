@@ -591,3 +591,13 @@ function repeatStr(n, s) {
 			}return sum  
 		  }
 	
+	
+	//Highest and Lowest (7 kyu)
+		function highAndLow(numbers){
+
+			let arr = numbers.split(" ").map(Number)
+			let min = Math.min(...arr)
+			let max = Math.max(...arr)
+			return(`${max} ${min}`)
+		  } 
+	

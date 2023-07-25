@@ -648,3 +648,12 @@
 			  return "Zero"
 			}
 		  }
+
+		  // Get the mean of an array
+		  function getAverage(marks){
+			const initialValue = 0;
+			const sumWithInitial = marks.reduce(
+			  (accumulator, currentValue) => accumulator + currentValue,
+			  initialValue)
+			  return Math.floor(sumWithInitial / marks.length)
+			}

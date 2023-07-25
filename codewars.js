@@ -649,7 +649,7 @@
 			}
 		  }
 
-		  // Get the mean of an array
+		// Get the mean of an array
 		  function getAverage(marks){
 			const initialValue = 0;
 			const sumWithInitial = marks.reduce(
@@ -657,3 +657,8 @@
 			  initialValue)
 			  return Math.floor(sumWithInitial / marks.length)
 			}
+
+		// Holiday VIII - Duty Free
+		function dutyFree(normPrice, discount, hol){
+			return Math.floor(hol / (normPrice * discount * 0.01))
+		  }

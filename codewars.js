@@ -1,7 +1,8 @@
-function repeatStr(n, s) {
+	function repeatStr(n, s) {
 	return s.repeat(n);
-	
-	
+
+
+
 	// DESCRIPTION:
 	// In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
@@ -122,8 +123,7 @@ function repeatStr(n, s) {
 		return a * b
 	}
 
-	
-	
+
 	//Training JS #5: Basic data types--Object
 
 	function animal(obj){
@@ -200,8 +200,9 @@ function repeatStr(n, s) {
 		
 		return [odd,even];
 	  }
-	
-	//Training JS #11: loop statement --break,continue
+
+
+	  //Training JS #11: loop statement --break,continue
 
 	  function grabDoll(dolls){
 		var bag=[];
@@ -219,27 +220,30 @@ function repeatStr(n, s) {
 		return bag;
 	  }
 
-	
-		  //Training JS #12: loop statement --for..in and for..of
+
+	  //Training JS #12: loop statement --for..in and for..of
 
 	  function giveMeFive(obj){
 		//coding here
 		let arr = []
+    
+    
 		for (key in obj){
 		  let keyLength = key.length
-     		  let valueLength = obj[key].length
-     			 if (keyLength == 5) {
-				arr.push(key)
-    			 }
-      			if (valueLength == 5) {
-				arr.push(obj[key]) 
-			 }
-		    }
+      let valueLength = obj[key].length
+		  
+      if (keyLength == 5) {
+			arr.push(key)
+     }
+      if (valueLength == 5) {
+			arr.push(obj[key]) 
+		}
+		}
 		return arr
 	  }
 
-	
-	 //#13: Number object and its properties
+
+	  //#13: Number object and its properties
 
 	  function whatNumberIsIt(n){
 		//coding here
@@ -261,17 +265,19 @@ function repeatStr(n, s) {
 		}
 	 	 whatNumberIsIt()
 
-	
-	 // Training JS #14: Methods of Number 
+
+		 // Training JS #14: Methods of Number 
 		 //object--toString() and toLocaleString()
 
 		 function colorOf(r,g,b){
 			//coding here
 			
+			
 			var k =  r.toString(16)
 			var l =  g.toString(16)
 			var m =  b.toString(16)
 			
+		
 			  if (k.length < 2){
 				var k = "0" + k
 			  }  
@@ -286,9 +292,9 @@ function repeatStr(n, s) {
 		  return ("#" + k+ l+ m)
 			
 		  }
-	
-	
-	//Rock Paper Scissors!
+
+
+		  //Rock Paper Scissors!
 
 		  const rps = (p1, p2) => {
 			if(p1 == "scissors" && p2 == "paper" || p1 == "rock" && p2 == "scissors" || p1 == "paper" && p2 == "rock"){
@@ -299,9 +305,9 @@ function repeatStr(n, s) {
 			  return("Draw!")
 			} 
 		  };
-	
-	
-	//   Total amount of points
+		  
+		  
+		//   Total amount of points
 
 		function points(games) {
 			let total = 0
@@ -317,16 +323,17 @@ function repeatStr(n, s) {
 			} 
 			return total
 			}
-	
-	// Reverse List Order
+
+		
+		// Reverse List Order
 
 		function reverseList(list) {
 		let listReverse = list.reverse()
 		return listReverse
 		}	
-	
-	
-	// Find Multiples of a Number
+
+
+		// Find Multiples of a Number
 
 		function findMultiples(integer, limit) {
 			//your code here
@@ -338,9 +345,9 @@ function repeatStr(n, s) {
 			}
 			  
 			} return arr
-		  } 
-	
-	 // Convert a String to a Number!
+
+			
+		  // Convert a String to a Number!
 		  const stringToNumber = function(str){
 			// put your code here
 		   let strToNum = Number(str)
@@ -348,14 +355,16 @@ function repeatStr(n, s) {
 		  }
 
 		  
-	  // Convert a Number to a String!
+		  // Convert a Number to a String!
 		  function numberToString(num) {
 			// Return a string of the number here!
+			
 			let string = num.toString()
 			return string
 			}
-	
-	//Convert number to reversed array of digits
+
+
+		  //Convert number to reversed array of digits
 		  function digitize(n) {
 			//code here
 			let splitN = n.toString().split('')
@@ -364,7 +373,8 @@ function repeatStr(n, s) {
 			return splitNu
 		  }
 
-	 //Return Negative
+
+		  //Return Negative
 		  function makeNegative(num) {
 			// Code?
 			if(num<0){
@@ -374,7 +384,8 @@ function repeatStr(n, s) {
 			} else {return 0}
 		  }
 
-	//Sum without highest and lowest number
+
+		  //Sum without highest and lowest number
 		  function sumArray(array) {
 			if (!array || array.length <= 1) {
 			   return 0;
@@ -396,13 +407,13 @@ function repeatStr(n, s) {
 		   }
 		   
 		   
-	 //Keep Hydrated!
-		  	function litres(time) {
+		   //Keep Hydrated!
+		   function litres(time) {
 			return Math.floor(time/2)
 		  }
-	
-	
-	  //Printer Errors(7kyu)
+
+
+		  //Printer Errors(7kyu)
 		  function printerError(s) {
 			// your code
 		  s = s.split('');
@@ -429,20 +440,21 @@ function repeatStr(n, s) {
 			} else {
 			  badCounter++
 			}
+			
 		  } console.log(goodCounter)
 		  console.log(badCounter)
 		  console.log(s.length)
 		  return (badCounter +"/"+s.length)
 		}
 
-	
-	//Sum The Strings
+
+		//Sum The Strings
 		function sumStr(a,b) {
 			return (Number(a) + Number(b)).toString()
 		  }
-	
-	
-	 //Remove First and Last Character
+
+
+	    //Remove First and Last Character
 		function removeChar(str){
 			//You got this!
 			 let arr = str.split("")
@@ -451,20 +463,21 @@ function repeatStr(n, s) {
 			 let str2 = arr.join("")
 			 return str2
 		   };
-	
-	
-	//Find Maximum and Minimum Values of a List
+		   
+		
+		//Find Maximum and Minimum Values of a List
 		var min = function(list){
 			list.sort((a,b) => a-b)
 			return list[0];
 		}
+		
 		var max = function(list){
 			list.sort((a,b) => b-a)
 			return list[0];
 		}
+		   
 		
-		
-	//Is this my tail?
+		//Is this my tail?
 		function correctTail(body, tail){
 			let splitBody = body.split("")
 			console.log(splitBody)
@@ -474,9 +487,9 @@ function repeatStr(n, s) {
 			  return false
 			}
 		  }
-	
-	
-	//Grader
+
+
+		//Grader
 		function grader(score) {
 			if(score < 0.6){
 			  return "F"
@@ -492,9 +505,9 @@ function repeatStr(n, s) {
 			  return  "F"
 			}
 		  }
-	
-	
-	 //Simple Fun #1: Seats in Theater
+		
+		
+		//Simple Fun #1: Seats in Theater
 		  function seatsInTheater(nCols, nRows, col, row) {
 			//coding and coding..
 			let x = nCols - col +1
@@ -502,10 +515,9 @@ function repeatStr(n, s) {
 			let a = x*y
 			return a
 		  }
-	
-	
 
-	 //Don't give me five! (7 kyu)
+
+	    //Don't give me five! (7 kyu)
 		  function dontGiveMeFive(start, end) {
 			let arr = [];
 			for (let i = start; i <= end; i++) {
@@ -519,9 +531,9 @@ function repeatStr(n, s) {
 			}
 			return count
 			}
-	
-	
-	//Get the Middle Character (7 kyu)
+
+			
+		//Get the Middle Character (7 kyu)
 		function getMiddle(s){
 			//Code goes here!
 			
@@ -537,18 +549,17 @@ function repeatStr(n, s) {
 			return(split[middleIndex])
 		  }
 		  }
-	
-	
-	// Descending Order (7 kyu)
+
+		// Descending Order (7 kyu)
 		function descendingOrder(n){
 			let split = n.toString().split("")
 			let split2 = split.sort((a, b) => b-a);
 			let split3 = split2.join("")
 			return Number(split3)
 			}
-	
-	
-	//Disemvowel Trolls (7 kyu)
+
+			
+		//Disemvowel Trolls (7 kyu)
 		function disemvowel(str) {
 			let split = str.split("")
 			
@@ -562,13 +573,15 @@ function repeatStr(n, s) {
 			split = split.filter(val => val !== "I");
 			split = split.filter(val => val !== "O");
 			split = split.filter(val => val !== "U");
+			
 			split = split.join("")
 			
 			return(split)
 		  }
-	
-	
-	//Reversed Strings
+
+
+		//Reversed Strings
+
 		function solution(str){
   
 			let split = str.split("")
@@ -577,9 +590,9 @@ function repeatStr(n, s) {
 			
 			return joined
 		  }
-	
-	
-	//Vowel Count (7 kyu)
+
+
+		//Vowel Count (7 kyu)
 		function getCount(str) {
  
 			let split = str.split("")
@@ -591,9 +604,9 @@ function repeatStr(n, s) {
 				
 			}return sum  
 		  }
-	
-	
-	//Highest and Lowest (7 kyu)
+
+
+		//Highest and Lowest (7 kyu)
 		function highAndLow(numbers){
 
 			let arr = numbers.split(" ").map(Number)
@@ -601,4 +614,12 @@ function repeatStr(n, s) {
 			let max = Math.max(...arr)
 			return(`${max} ${min}`)
 		  } 
-	
+
+
+		// Get Nth Even Number
+		function nthEven(n){
+			// your code here
+			for (i = 0; i <n ; i +2){
+			  return n*2-2
+			}  
+		  }

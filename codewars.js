@@ -676,3 +676,15 @@
 			  return total / array.length
 			}
 			}
+
+
+		// A Needle in the Haystack
+		function findNeedle(haystack) {
+			// your code here
+			for (i = 0 ; i < haystack.length ; i++){
+			  if(haystack[i] == "needle"){
+			   let num = haystack.indexOf("needle")
+				return (`found the needle at position ${num}`)
+			  }
+			}
+		  }

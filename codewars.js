@@ -749,6 +749,7 @@
 			(accumulator, currentValue) => accumulator + currentValue,
 			initialValue
 		  );
+			
 			const initialValue2 = 0;
 		  const sumWithInitial2 = arr2.reduce(
 			(accumulator2, currentValue2) => accumulator2 + currentValue2,
@@ -756,3 +757,20 @@
 		  );
 			return sumWithInitial + sumWithInitial2
 		  }
+
+		//Is n divisible by x and y?
+		function isDivisible(n, x, y) {
+  
+			if(n % x == 0 && n % y == 0){
+			  return true
+			} else {
+			  return false
+			}
+		  }
+
+		//Sum of two lowest positive integers
+		  function sumTwoSmallestNumbers(numbers) {  
+			numbers.sort(function(b, a){return b - a});
+			return numbers[0] + numbers[1]
+		  }
+		  

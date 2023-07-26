@@ -708,3 +708,52 @@
 			  return (`hello ${name}!`)
 			}
 		  }
+
+		// Array Array Array (7 kata)
+		function explode(x) {
+
+			let firstel = x[0]
+			let secondel = x[1]
+		
+			if (typeof (firstel) === "number" && typeof (secondel) === "number") {
+				let newArr = []
+				for (let i = 0; i < firstel + secondel; i++) {
+					newArr.unshift(x)
+				}
+				return newArr
+		
+			} else if (typeof (firstel) === "number" && typeof (secondel) != "number") {
+				let newArr2 = []
+				for (let i = 0; i < firstel; i++) {
+					newArr2.unshift(x)
+				}
+				return newArr2
+		
+			} else if (typeof (firstel) != "number" && typeof (secondel) === "number") {
+				let newArr3 = []
+				for (let i = 0; i < secondel; i++) {
+					newArr3.unshift(x)
+		
+				}
+				return newArr3
+		
+			} else if (typeof (firstel) != "number" && typeof (secondel) != "number") {
+				return "Void!"
+			}
+		}
+
+		//Array plus array
+		function arrayPlusArray(arr1, arr2) {
+			const initialValue = 0;
+		  const sumWithInitial = arr1.reduce(
+			(accumulator, currentValue) => accumulator + currentValue,
+			initialValue
+		  );
+			
+			const initialValue2 = 0;
+		  const sumWithInitial2 = arr2.reduce(
+			(accumulator2, currentValue2) => accumulator2 + currentValue2,
+			initialValue2
+		  );
+			return sumWithInitial + sumWithInitial2
+		  }

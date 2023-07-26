@@ -749,7 +749,6 @@
 			(accumulator, currentValue) => accumulator + currentValue,
 			initialValue
 		  );
-			
 			const initialValue2 = 0;
 		  const sumWithInitial2 = arr2.reduce(
 			(accumulator2, currentValue2) => accumulator2 + currentValue2,

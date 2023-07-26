@@ -688,3 +688,23 @@
 			  }
 			}
 		  }
+
+		// Exclusive "or" (xor) Logical Operator
+		function xor(a, b) {
+			if(a == true && b == false){
+			  return true
+			} else if (a == false && b == true){
+			  return true
+			} else {
+			  return false
+			}
+		  }
+
+		// Say hello! (7 kata)
+		function greet(name) {
+			if(!name || name == null || name == ""){
+			  return null
+			} else {
+			  return (`hello ${name}!`)
+			}
+		  }

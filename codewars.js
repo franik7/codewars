@@ -769,8 +769,15 @@
 		  }
 
 		//Sum of two lowest positive integers
-		  function sumTwoSmallestNumbers(numbers) {  
+		function sumTwoSmallestNumbers(numbers) {  
 			numbers.sort(function(b, a){return b - a});
 			return numbers[0] + numbers[1]
 		  }
-		  
+
+
+		//Flatten and sort an array
+		function flattenAndSort(array) {
+			let flatted = (array.flatMap((element) => element));
+			flatted.sort(function(a, b){return a - b});
+  			return flatted;
+		}

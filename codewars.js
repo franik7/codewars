@@ -781,3 +781,29 @@
 			flatted.sort(function(a, b){return a - b});
   			return flatted;
 		}
+
+
+		// Complementary DNA (7 kata)
+		function DNAStrand(dna){
+  		//your code here
+  
+		let arr = dna.split("")
+			let newArr = []
+			for(let i = 0;i< arr.length;i++){
+
+			if(arr[i] == "A"){
+				newArr.push("T")
+			} else if(arr[i] == "T")
+				{
+				newArr.push("A")
+			}else if(arr[i] == "G")
+				{
+				newArr.push("C")
+			}else if(arr[i] == "C")
+				{
+				newArr.push("G")
+			}
+		} let newArr2 = newArr.join("")
+
+		return newArr2
+		}

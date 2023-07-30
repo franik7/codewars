@@ -807,3 +807,21 @@
 
 		return newArr2
 		}
+
+			
+		// Simple Fun #176: Reverse Letter (7 kata)
+			function reverseLetter(str) {
+  		//coding and coding..
+
+		let arr = str.split("")
+		let newArr = []
+		for(let i = 0; i<arr.length; i++){
+		if(arr[i] == 'a' || arr[i] == 'b' || arr[i] == 'c'|| arr[i] == 'd'|| arr[i] == 'e'|| arr[i] == 'f'|| arr[i] == 'g'|| arr[i] == 'h'|| arr[i] == 'i'|| arr[i] == 'j'|| arr[i] == 'k'|| arr[i] == 'l'|| arr[i] == 'm'|| arr[i] == 'n'|| arr[i] == 'o'|| arr[i] == 'p'|| arr[i] == 'q' || arr[i] == 'r' || arr[i] == 's' || arr[i] == 't' || arr[i] == 'u' || arr[i] == 'v' || arr[i] == 'w' || arr[i] == 'x' || arr[i] == 'y' || arr[i] == 'z' ){
+		  newArr.push(arr[i])
+		}  
+		}
+		let reversed =  newArr.reverse()
+		let newArr2 = reversed.join("")
+		
+		return newArr2 
+		}

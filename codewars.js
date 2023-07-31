@@ -1,6 +1,6 @@
 	function repeatStr(n, s) {
 	return s.repeat(n);
-
+	}
 
 
 	// DESCRIPTION:
@@ -808,20 +808,63 @@
 		return newArr2
 		}
 
-			
-		// Simple Fun #176: Reverse Letter (7 kata)
-			function reverseLetter(str) {
-  		//coding and coding..
 
-		let arr = str.split("")
+		//Negative Connotation (7 kata)
+		function connotation(str) {
+
+		let arr = str.split(/\s+/)
+		let arr2 = arr.filter(word => word !== "")
 		let newArr = []
-		for(let i = 0; i<arr.length; i++){
-		if(arr[i] == 'a' || arr[i] == 'b' || arr[i] == 'c'|| arr[i] == 'd'|| arr[i] == 'e'|| arr[i] == 'f'|| arr[i] == 'g'|| arr[i] == 'h'|| arr[i] == 'i'|| arr[i] == 'j'|| arr[i] == 'k'|| arr[i] == 'l'|| arr[i] == 'm'|| arr[i] == 'n'|| arr[i] == 'o'|| arr[i] == 'p'|| arr[i] == 'q' || arr[i] == 'r' || arr[i] == 's' || arr[i] == 't' || arr[i] == 'u' || arr[i] == 'v' || arr[i] == 'w' || arr[i] == 'x' || arr[i] == 'y' || arr[i] == 'z' ){
-		  newArr.push(arr[i])
-		}  
+
+		for(let i = 0; i<arr2.length; i++){
+
+			let firstLetter = arr2[i][0].toLowerCase()
+
+			newArr.push(firstLetter)
+
+		}   
+
+		let count = 0
+		let otherCount = 0
+
+		for(let j = 0; j<newArr.length; j++){
+		let firstSecEl = newArr[j][0]
+		if(firstSecEl == "a" || firstSecEl == "b" || firstSecEl == "c"|| firstSecEl == "d"|| firstSecEl == "e"|| firstSecEl == "f"|| firstSecEl == "g"|| firstSecEl == "h"|| firstSecEl == "i"|| firstSecEl == "j"|| firstSecEl == "k"|| firstSecEl == "l"|| firstSecEl == "m"){
+			count = count + 1 
+		} else {
+			otherCount = otherCount + 1
 		}
-		let reversed =  newArr.reverse()
-		let newArr2 = reversed.join("")
-		
-		return newArr2 
+		}
+		if(count >= otherCount){
+			return true
+		} else {
+			return false
+		}
+		}
+
+
+		// Insert Dashes 2 (7 kata)
+		function insertDashII(num) {
+		let stringed =  num.toString()
+		let arr = stringed.split("")
+		let newArr = []
+
+		for(let i =0; i< arr.length;i++){
+			newArr.push(arr[i])
+			if(arr[i] == 0 || arr[i+1] == 0){
+			}  
+			else if(i < arr.length -1 &&arr[i] %2 === 1 & arr[i+1] %2 ===1){
+			newArr.push("-")
+			} else if(i < arr.length -1 &&arr[i] %2 === 0 & arr[i+1] %2 ===0){
+				newArr.push("*")
+			}
+		}
+		let newStr = newArr.join("")
+		return newStr
+		}
+
+
+		//Sum of odd numbers (7 kata)
+		function rowSumOddNumbers(n) {
+		return n**3
 		}

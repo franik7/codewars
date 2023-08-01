@@ -868,3 +868,44 @@
 		function rowSumOddNumbers(n) {
 		return n**3
 		}
+
+		
+		//You're a square!
+		var isSquare = function(n){
+		let k = Math.floor(Math.sqrt(n))
+		if(n < 0){
+			return false
+		} else if (n == 0){
+			return true
+		} else if (n == k*k){
+			return true
+		} else {
+			return false
+		}
+		}
+
+
+		//Unfinished Loop - Bug Fixing #1
+		function createArray(number){
+		var newArray = [];
+		for(var counter = 1; counter <= number; counter++){
+			newArray.push(counter);
+		}
+		return newArray;
+		}
+
+ 
+		// String Templates - Bug Fixing #5
+ 		function buildString(...template){
+		return `I like ${template.join(', ')}!`;
+		}
+
+ 
+		// Beginner - Lost Without a Map
+		function maps(x){
+		let newArr = [] 
+		for(let i = 0; i<x.length;i++){
+		newArr.push(x[i]*2)
+		}
+		return newArr
+		}

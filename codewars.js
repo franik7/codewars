@@ -909,3 +909,99 @@
 		}
 		return newArr
 		}
+
+
+		//Pillars
+		function pillars(numPill, dist, width) {
+		if(numPill === 1){
+		return 0
+		} else if(numPill === 2){
+		return dist * 100
+		} else if (numPill > 2){
+		return (dist * (numPill - 1)) * 100 + (width * (numPill - 2))
+		}
+		}
+		
+		
+		// Switcheroo
+		function switcheroo(x){
+		let arr = x.split("")
+		let newArr = []
+		for(let i =0;i<arr.length;i++){
+		if(arr[i] == "a"){
+		newArr.push("b")
+		} else if(arr[i] == "b"){
+		newArr.push("a")
+		} else{
+		newArr.push("c")
+		}
+		} let string = newArr.join("")
+		return string
+		}
+		
+
+		// The old switcheroo 2
+		function encode(str) {
+		let str2 = str.toLowerCase()
+		let arr = str2.split("")
+		let newArr = []
+		for (let i = 0; i < arr.length; i++) {
+			if (arr[i] == "a") {
+				newArr.push("1")
+			} else if (arr[i] == "b") {
+				newArr.push("2")
+			} else if (arr[i] == "c") {
+				newArr.push("3")
+			} else if (arr[i] == "d") {
+				newArr.push("4")
+			} else if (arr[i] == "e") {
+				newArr.push("5")
+			} else if (arr[i] == "f") {
+				newArr.push("6")
+			} else if (arr[i] == "g") {
+				newArr.push("7")
+			} else if (arr[i] == "h") {
+				newArr.push("8")
+			} else if (arr[i] == "i") {
+				newArr.push("9")
+			} else if (arr[i] == "j") {
+				newArr.push("10")
+			} else if (arr[i] == "k") {
+				newArr.push("11")
+			} else if (arr[i] == "l") {
+				newArr.push("12")
+			} else if (arr[i] == "m") {
+				newArr.push("13")
+			} else if (arr[i] == "n") {
+				newArr.push("14")
+			} else if (arr[i] == "o") {
+				newArr.push("15")
+			} else if (arr[i] == "p") {
+				newArr.push("16")
+			} else if (arr[i] == "q") {
+				newArr.push("17")
+			} else if (arr[i] == "r") {
+				newArr.push("18")
+			} else if (arr[i] == "s") {
+				newArr.push("19")
+			} else if (arr[i] == "t") {
+				newArr.push("20")
+			} else if (arr[i] == "u") {
+				newArr.push("21")
+			} else if (arr[i] == "v") {
+				newArr.push("22")
+			} else if (arr[i] == "w") {
+				newArr.push("23")
+			} else if (arr[i] == "x") {
+				newArr.push("24")
+			} else if (arr[i] == "y") {
+				newArr.push("25")
+			} else if (arr[i] == "z") {
+				newArr.push("26")
+			} else {
+				newArr.push(arr[i])
+			}
+			}
+			let string2 = newArr.join("")
+			return string2
+			}

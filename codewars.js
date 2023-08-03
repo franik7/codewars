@@ -1005,3 +1005,53 @@
 			let string2 = newArr.join("")
 			return string2
 			}
+
+
+			//Digits Explosion
+			function explode(s) {
+				let newArr = []
+				for(let i = 0; i<s.length;i++){
+				  if(s[i] == 0){
+				  } else if (s[i] == 1){
+					newArr.push(s[i])
+				  }else if (s[i] == 2){
+					newArr.push(s[i], s[i])
+				  }else if (s[i] == 3){
+					newArr.push(s[i], s[i], s[i])
+				  }else if (s[i] == 4){
+					newArr.push(s[i], s[i], s[i], s[i])
+				  }else if (s[i] == 5){
+					newArr.push(s[i], s[i], s[i], s[i], s[i])
+				  }else if (s[i] == 6){
+					newArr.push(s[i], s[i], s[i], s[i], s[i], s[i])
+				  }else if (s[i] == 7){
+					newArr.push(s[i], s[i], s[i], s[i], s[i], s[i], s[i])
+				  }else if (s[i] == 8){
+					newArr.push(s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i])
+				  }else if (s[i] == 9){
+					newArr.push(s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i])
+				  }   
+				}
+				let newStr = newArr.join("")  
+				return(newStr)
+			  }
+
+
+			  //Divisible by previous digit?
+			  function divisibleByLast(n) {
+
+			  let number = n.toString()
+			  let arr = number.split("")
+			  let newArr =[]
+			  newArr[0] = false
+			  for(let i = arr.length - 1; i >= 0; i--){
+				if(arr[i] % arr[i-1] == 0){
+				  newArr.unshift(true)
+				} else {
+				  newArr.unshift(false)
+				}
+			  }
+				newArr.pop(newArr.length - 1)
+				console.log(newArr)
+			  return(newArr)
+			  }

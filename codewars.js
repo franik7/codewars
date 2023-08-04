@@ -1037,7 +1037,7 @@
 			  }
 
 
-			  //Divisible by previous digit?
+			//Divisible by previous digit?
 			  function divisibleByLast(n) {
 
 			  let number = n.toString()
@@ -1055,3 +1055,12 @@
 				console.log(newArr)
 			  return(newArr)
 			  }
+
+
+			//Jenny's secret message
+			function greet(name){
+			return "Hello, " + name + "!";
+			if(name === "Johnny")
+				return "Hello, my love!";
+			}
+

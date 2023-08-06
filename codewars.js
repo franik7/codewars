@@ -11,8 +11,7 @@
 	// Your function will be tested with pre-made examples as well as random ones.
 
 	function findDifference(a, b) {
-		//loading...
-
+	
 		let acub = a[0] * a[1] * a[2]
 		let bcub = b[0] * b[1] * b[2]
 		if (acub > bcub) {

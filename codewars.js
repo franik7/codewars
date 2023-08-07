@@ -11,7 +11,8 @@
 	// Your function will be tested with pre-made examples as well as random ones.
 
 	function findDifference(a, b) {
-	
+		//loading...
+
 		let acub = a[0] * a[1] * a[2]
 		let bcub = b[0] * b[1] * b[2]
 		if (acub > bcub) {
@@ -1063,3 +1064,44 @@
 				return "Hello, my love!";
 			}
 
+
+			//What time is it?
+			var getMilitaryTime = function(input) {
+			let array = input.split(":")
+			if(array[2].includes("AM") && Number(array[0]) == 12){
+			array[0] = "00"
+			} else if(array[2].includes("PM") && Number(array[0]) == "01"){
+			array[0] = "13"
+			} else if(array[2].includes("PM") && Number(array[0]) == "02"){
+			array[0] = "14"
+			} else if(array[2].includes("PM") && Number(array[0]) == "03"){
+			array[0] = "15"
+			} else if(array[2].includes("PM") && Number(array[0]) == "04"){
+			array[0] = "16"
+			} else if(array[2].includes("PM") && Number(array[0]) == "05"){
+			array[0] = "17"
+			} else if(array[2].includes("PM") && Number(array[0]) == "06"){
+			array[0] = "18"
+			} else if(array[2].includes("PM") && Number(array[0]) == "07"){
+			array[0] = "19"
+			} else if(array[2].includes("PM") && Number(array[0]) == "08"){
+			array[0] = "20"
+			} else if(array[2].includes("PM") && Number(array[0]) == "09"){
+			array[0] = "21"
+			} else if(array[2].includes("PM") && Number(array[0]) == "10"){
+			array[0] = "22"
+			} else if(array[2].includes("PM") && Number(array[0]) == "11"){
+			array[0] = "23"
+			}
+			let lastEl = array[2].split("")
+			lastEl.pop()
+			lastEl.pop()
+			let combo = lastEl[0].concat(lastEl[1])
+			return array[0] + ":" + array[1] +":"+ combo
+			};
+
+
+			//Create Phone Number (6 kata)
+			function createPhoneNumber(numbers){
+			return "(" + numbers[0] + numbers[1]  + numbers[2] + ")" + " " + numbers[3] + numbers[4] + numbers[5] + "-" + + numbers[6] + numbers[7] + numbers[8] + numbers[9] 
+			}

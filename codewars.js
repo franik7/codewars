@@ -1116,3 +1116,8 @@
 			function reverseWords(str){
 				return str.split(' ').reverse().join(' ');
 			  }
+
+			//Generate user links
+			function generateLink(user) {
+				return `http://www.codewars.com/users/${encodeURIComponent(user)}`;
+			  }

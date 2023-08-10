@@ -1121,3 +1121,18 @@
 			function generateLink(user) {
 				return `http://www.codewars.com/users/${encodeURIComponent(user)}`;
 			  }
+
+
+			//Remove String Spaces
+			function noSpace(x){
+				let arr = x.split("")
+				console.log(arr)
+				let newArr = []
+				for(let i = 0; i < arr.length;i++){
+					if(arr[i] != " "){
+					newArr.push(arr[i])
+					}
+				} console.log(newArr)
+					let str = newArr.join("")
+					return str
+				}

@@ -1136,3 +1136,13 @@
 					let str = newArr.join("")
 					return str
 				}
+
+
+			//Invert values
+			function invert(array) {
+				var newArr = [];
+				for(var i = 0; i < array.length; i++){
+					newArr.push(-array[i]);
+				}
+				return newArr;
+				}

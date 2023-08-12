@@ -1146,3 +1146,19 @@
 				}
 				return newArr;
 				}
+
+			
+			//Remove the noise from the string
+			function removeNoise(str){
+				// write your code below
+			  let arr = str.split("")
+			  let newArr = []
+			  for(let i = 0; i<arr.length;i++){
+				if (arr[i] == "%" || arr[i] == "$" || arr[i] == "&" || arr[i] == "%" || arr[i] == "/" || arr[i] == "#" || arr[i] == "·"
+				  || arr[i] == "@"|| arr[i] == "|"|| arr[i] == "º" || arr[i] == "ª" || arr[i] == "\\"){ 
+				} else {
+				newArr.push(arr[i])
+			  }}
+			  let strAgain = newArr.join("")
+			  return strAgain
+			}

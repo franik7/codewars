@@ -1162,3 +1162,37 @@
 			  let strAgain = newArr.join("")
 			  return strAgain
 			}
+
+
+			//Stop gninnipS My sdroW!
+			function spinWords(string){
+				//TODO Have fun :)
+			  let arr = string.split(" ")
+			  let newArr = []
+			  for(let i = 0; i<arr.length;i++){
+				if(arr[i].length < 5){
+				  newArr.push(arr[i])
+				} else {
+				  let reversed = arr[i].split("").reverse().join("")
+				  newArr.push(reversed)
+				}
+			  }  
+				let newStr = newArr.join(" ")
+				return newStr
+			  }
+
+			//Row Weights
+			function rowWeights(array){
+				//your code here
+				let newArr= []
+				let total1 = 0
+				let total2 = 0
+				for(let i = 0; i<array.length; i=i+2){
+					total1 = total1 + array[i]
+				}
+				for(let j = 1; j<array.length; j=j+2){
+					total2 = total2 + array[j]
+				}  
+				newArr.push(total1, total2)
+				return newArr
+				}

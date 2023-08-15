@@ -1196,3 +1196,13 @@
 				newArr.push(total1, total2)
 				return newArr
 				}
+
+
+			//Do I get a bonus?
+			function bonusTime(salary, bonus) {
+				  if(bonus){
+				  return "£" + salary * 10
+				  } else {
+					return "£" + salary
+				  }
+				}

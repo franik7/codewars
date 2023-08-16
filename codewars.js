@@ -1206,3 +1206,25 @@
 					return "£" + salary
 				  }
 				}
+
+			
+			//Extract Values and Units
+			function valAndUnits(s) {
+				let arr = s.split("")
+				let numArr = []
+				let letArr = []
+				for(let i = 0;i<arr.length;i++){
+					if(arr[i] == "-" || arr[i] == "." || arr[i] == 1 || arr[i] == 2 || arr[i] == 3 || arr[i] == 4 || arr[i] == 5 || arr[i] == 6 || arr[i] == 7 || arr[i] == 8 || arr[i] == 9 || arr[i] == 0){
+					numArr.push(arr[i])
+					} else {
+						letArr.push(arr[i])
+					}
+				} 
+				let n = numArr.join('')
+				let l = letArr.join('')
+		
+				let newN = parseFloat(n)
+	
+				const obj = {val: newN, units: l}
+				return obj
+				}

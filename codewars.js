@@ -1228,3 +1228,10 @@
 				const obj = {val: newN, units: l}
 				return obj
 				}
+
+			//Multiply array values and filter non-numeric
+			function multiplyAndFilter(array, multiplier){
+  			// your code
+				const newArr = array.filter((el) => typeof el == "number").map((x) => x * multiplier);
+				return newArr
+				}s

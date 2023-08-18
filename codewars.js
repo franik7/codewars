@@ -1234,4 +1234,23 @@
   			// your code
 				const newArr = array.filter((el) => typeof el == "number").map((x) => x * multiplier);
 				return newArr
-				}s
+				}
+
+			//Multiply the strings in the array
+			function arrMultiply(arr){
+				//your solution
+				for(let i =0; i< arr.length;i++){
+					return (Number(arr[0]) * Number(arr[1])).toString()
+				} 
+				}
+
+
+			//Find numbers which are divisible by given number
+			function divisibleBy(numbers, divisor){
+				let newArr = []
+				for(let el of numbers){
+				  if(el % divisor == 0){
+					newArr.push(el)
+				  }
+				} return newArr
+				}

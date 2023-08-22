@@ -1341,3 +1341,11 @@ function removeUrlAnchor(url){
 	}  let newStr = newArr.join("")
 	return newStr
 }
+
+
+//MakeUpperCase
+function makeUpperCase(str) {
+	// Code here
+	let up = str.toUpperCase()
+	return up
+  }

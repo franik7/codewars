@@ -1349,3 +1349,19 @@ function makeUpperCase(str) {
 	let up = str.toUpperCase()
 	return up
   }
+
+
+//The Lazy Startup Office
+function binRota(arr){
+	let newArr = []
+	for(let i = 0; i<arr.length; i++){
+	  if(arr.indexOf(arr[i]) % 2 != 0){
+	   let reversed = arr[i].reverse()
+		newArr.push(reversed)    
+  } else {
+	newArr.push(arr[i]) 
+  } 
+  } 
+  let flat = newArr.flat()
+  return flat
+  }

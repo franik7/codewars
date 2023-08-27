@@ -2,6 +2,7 @@ function repeatStr(n, s) {
 return s.repeat(n);
 }
 
+
 // DESCRIPTION:
 // In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
@@ -1364,3 +1365,70 @@ function binRota(arr){
   let flat = newArr.flat()
   return flat
   }
+
+
+//NATO Phonetic Alphabet
+// the object LETTERS is preloaded
+// LETTERS['B'] === 'Bravo', etc
+function nato(word) {
+let word1 = word.toLowerCase() 
+let arr = word1.split("")
+let newArr = []
+  
+for (let i = 0; i < arr.length; i++){
+ if (arr[i] == "a") {
+    newArr.push("Alpha");
+  } else if (arr[i] == "b") {
+    newArr.push("Bravo");
+  } else if (arr[i] == "c") {
+    newArr.push("Charlie");
+  } else if (arr[i] == "d") {
+    newArr.push("Delta");
+  } else if (arr[i] == "e") {
+    newArr.push("Echo");
+  } else if (arr[i] == "f") {
+    newArr.push("Foxtrot");
+  } else if (arr[i] == "g") {
+    newArr.push("Golf");
+  } else if (arr[i] == "h") {
+    newArr.push("Hotel");
+  } else if (arr[i] == "i") {
+    newArr.push("India");
+  } else if (arr[i] == "j") {
+    newArr.push("Juliett");
+  } else if (arr[i] == "k") {
+    newArr.push("Kilo");
+  } else if (arr[i] == "l") {
+    newArr.push("Lima");
+  } else if (arr[i] == "m") {
+    newArr.push("Mike");
+  } else if (arr[i] == "n") {
+    newArr.push("November");
+  } else if (arr[i] == "o") {
+    newArr.push("Oscar");
+  } else if (arr[i] == "p") {
+    newArr.push("Papa");
+  } else if (arr[i] == "q") {
+    newArr.push("Quebec");
+  } else if (arr[i] == "r") {
+    newArr.push("Romeo");
+  } else if (arr[i] == "s") {
+    newArr.push("Sierra");
+  } else if (arr[i] == "t") {
+    newArr.push("Tango");
+  } else if (arr[i] == "u") {
+    newArr.push("Uniform");
+  } else if (arr[i] == "v") {
+    newArr.push("Victor");
+  } else if (arr[i] == "w") {
+    newArr.push("Whiskey");
+  } else if (arr[i] == "x") {
+    newArr.push("X-ray");
+  } else if (arr[i] == "y") {
+    newArr.push("Yankee");
+  } else if (arr[i] == "z") {
+    newArr.push("Zulu");
+  }  
+  } let str = newArr.join(" ")
+  return str 
+}

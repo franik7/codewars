@@ -1432,3 +1432,9 @@ for (let i = 0; i < arr.length; i++){
   } let str = newArr.join(" ")
   return str 
 }
+
+//FIXME: Replace all dots	
+var replaceDots = function(str) {
+  return (str.replaceAll('.', '-'));
+}
+	

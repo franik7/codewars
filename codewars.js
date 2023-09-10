@@ -3,7 +3,6 @@ return s.repeat(n);
 }
 
 
-
 // DESCRIPTION:
 // In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
@@ -1449,4 +1448,15 @@ function hoopCount (n) {
   } else {
     return "Keep at it until you get it"
   } 
+}
+
+
+//Simple multiplication
+function simpleMultiplication(number) {
+    // your code........
+  if(number % 2 == 0){
+    return number * 8
+  } else {
+    return number * 9
+  }
 }

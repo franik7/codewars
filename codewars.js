@@ -1460,3 +1460,8 @@ function simpleMultiplication(number) {
     return number * 9
   }
 }
+
+	
+//Is it even?
+const testEven = (n) => n % 2 === 0;
+

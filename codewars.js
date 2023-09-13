@@ -1465,3 +1465,24 @@ function simpleMultiplication(number) {
 //Is it even?
 const testEven = (n) => n % 2 === 0;
 
+	
+//Correct the mistakes of the character recognition software
+function correct(string)
+{
+  let arr = string.split("")
+  const newVal0 = "O"
+  const newVal5 = "S"
+  const newVal1 = "I"
+    for(let i = 0; i<arr.length; i++){
+      if(arr[i] == "0"){
+        arr[i] = newVal0
+      }
+      if(arr[i] == "5"){
+        arr[i] = newVal5
+      }
+      if(arr[i] == "1"){
+        arr[i] = newVal1
+      }
+    } return arr.join("")
+}
+

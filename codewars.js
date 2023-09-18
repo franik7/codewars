@@ -141,7 +141,7 @@ return(`This ${obj.color} ${obj.name} has ${obj.legs} legs.`)
 //#6: Basic data types--Boolean and conditional statements if..else
 
 function trueOrFalse(val){
-if (val)  return "true";             
+if (val)  return "true";
 else    return "false";
 }
 
@@ -164,7 +164,7 @@ return n * 100
 function howManydays(month){
 var days;
 switch (month){
-case 2: 
+case 2:
 days = 28
 break
 case 4:
@@ -214,7 +214,7 @@ bag.push(dolls[i])
 
 if (bag.length === 3){
 break
-} 
+}
 }
 
 return bag;
@@ -236,7 +236,7 @@ if (keyLength == 5) {
 arr.push(key)
 }
 if (valueLength == 5) {
-arr.push(obj[key]) 
+arr.push(obj[key])
 }
 }
 return arr
@@ -252,7 +252,7 @@ return("Input number is Number.MAX_VALUE")
 } else if (n === Number.MIN_VALUE) {
 return("Input number is Number.MIN_VALUE")
 } else if (n === Number.NEGATIVE_INFINITY) {
-return("Input number is Number.NEGATIVE_INFINITY") 
+return("Input number is Number.NEGATIVE_INFINITY")
 }else if (n === Number.POSITIVE_INFINITY) {
 return("Input number is Number.POSITIVE_INFINITY")
 }else if (n) {
@@ -266,7 +266,7 @@ return("Input number is Number.NaN")
 whatNumberIsIt()
 
 
-// Training JS #14: Methods of Number 
+// Training JS #14: Methods of Number
 //object--toString() and toLocaleString()
 
 function colorOf(r,g,b){
@@ -280,15 +280,15 @@ var m =  b.toString(16)
 
 	if (k.length < 2){
 	var k = "0" + k
-	}  
+	}
 
 	if (l.length < 2){
 	var l = "0" + l
-	}  
+	}
 	if (m.length < 2){
 		var m = "0" + m
-	}  
-	
+	}
+
 return ("#" + k+ l+ m)
 
 }
@@ -303,7 +303,7 @@ if(p1 == "scissors" && p2 == "paper" || p1 == "rock" && p2 == "scissors" || p1 =
 	return("Player 2 won!")
 } else if(p1 == "paper" && p2 == "paper" || p1 == "scissors" && p2 == "scissors" || p1 == "rock" && p2 == "rock"){
 	return("Draw!")
-} 
+}
 };
 
 
@@ -320,7 +320,7 @@ for(let i = 0; i< games.length; i++){
 	} else {
 	total += 1
 	}
-} 
+}
 return total
 }
 
@@ -330,7 +330,7 @@ return total
 function reverseList(list) {
 let listReverse = list.reverse()
 return listReverse
-}	
+}
 
 
 // Find Multiples of a Number
@@ -343,7 +343,7 @@ for (let i = 1; i<=limit/integer; i++){
 if(i * integer <= limit){
 	arr.push(i* integer)
 }
-	
+
 } return arr
 
 
@@ -394,15 +394,15 @@ if (!array || array.length <= 1) {
 	let sortedArray = array.sort(function(a, b){return a-b});
 	let lowestNum = sortedArray[0]
 	let highestNum = sortedArray[sortedArray.length - 1]
-	
-	
+
+
 	let arraySum = 0
 	for(let i = 0; i<sortedArray.length; i++){
-	
-		arraySum +=sortedArray[i] 
-	
+
+		arraySum +=sortedArray[i]
+
 	}
-	
+
 return arraySum- lowestNum - highestNum
 }
 
@@ -601,8 +601,8 @@ for (let i = 0 ; i < split.length; i++){
 	if (split[i] == "a" || split[i] == "e" || split[i] == "i" || split[i] == "o" || split[i] == "u"){
 	sum +=1
 	}
-	
-}return sum  
+
+}return sum
 }
 
 
@@ -613,7 +613,7 @@ let arr = numbers.split(" ").map(Number)
 let min = Math.min(...arr)
 let max = Math.max(...arr)
 return(`${max} ${min}`)
-} 
+}
 
 
 // Get Nth Even Number
@@ -621,7 +621,7 @@ function nthEven(n){
 // your code here
 for (i = 0; i <n ; i +2){
 	return n*2-2
-}  
+}
 }
 
 // Switch it Up!
@@ -672,7 +672,7 @@ if(array.length == 0){
 	let total = 0
 	for(let i = 0; i < array.length; i++){
 	total += array[i]
-	} 
+	}
 	return total / array.length
 }
 }
@@ -769,7 +769,7 @@ if(n % x == 0 && n % y == 0){
 }
 
 //Sum of two lowest positive integers
-function sumTwoSmallestNumbers(numbers) {  
+function sumTwoSmallestNumbers(numbers) {
 numbers.sort(function(b, a){return b - a});
 return numbers[0] + numbers[1]
 }
@@ -822,7 +822,7 @@ let firstLetter = arr2[i][0].toLowerCase()
 
 newArr.push(firstLetter)
 
-}   
+}
 
 let count = 0
 let otherCount = 0
@@ -830,7 +830,7 @@ let otherCount = 0
 for(let j = 0; j<newArr.length; j++){
 let firstSecEl = newArr[j][0]
 if(firstSecEl == "a" || firstSecEl == "b" || firstSecEl == "c"|| firstSecEl == "d"|| firstSecEl == "e"|| firstSecEl == "f"|| firstSecEl == "g"|| firstSecEl == "h"|| firstSecEl == "i"|| firstSecEl == "j"|| firstSecEl == "k"|| firstSecEl == "l"|| firstSecEl == "m"){
-count = count + 1 
+count = count + 1
 } else {
 otherCount = otherCount + 1
 }
@@ -852,7 +852,7 @@ let newArr = []
 for(let i =0; i< arr.length;i++){
 newArr.push(arr[i])
 if(arr[i] == 0 || arr[i+1] == 0){
-}  
+}
 else if(i < arr.length -1 &&arr[i] %2 === 1 & arr[i+1] %2 ===1){
 newArr.push("-")
 } else if(i < arr.length -1 &&arr[i] %2 === 0 & arr[i+1] %2 ===0){
@@ -903,7 +903,7 @@ return `I like ${template.join(', ')}!`;
 
 // Beginner - Lost Without a Map
 function maps(x){
-let newArr = [] 
+let newArr = []
 for(let i = 0; i<x.length;i++){
 newArr.push(x[i]*2)
 }
@@ -1030,9 +1030,9 @@ function explode(s) {
 		newArr.push(s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i])
 		}else if (s[i] == 9){
 		newArr.push(s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i], s[i])
-		}   
+		}
 	}
-	let newStr = newArr.join("")  
+	let newStr = newArr.join("")
 	return(newStr)
 	}
 
@@ -1103,7 +1103,7 @@ return array[0] + ":" + array[1] +":"+ combo
 
 //Create Phone Number (6 kata)
 function createPhoneNumber(numbers){
-return "(" + numbers[0] + numbers[1]  + numbers[2] + ")" + " " + numbers[3] + numbers[4] + numbers[5] + "-" + + numbers[6] + numbers[7] + numbers[8] + numbers[9] 
+return "(" + numbers[0] + numbers[1]  + numbers[2] + ")" + " " + numbers[3] + numbers[4] + numbers[5] + "-" + + numbers[6] + numbers[7] + numbers[8] + numbers[9]
 }
 
 
@@ -1155,7 +1155,7 @@ function removeNoise(str){
 	let newArr = []
 	for(let i = 0; i<arr.length;i++){
 	if (arr[i] == "%" || arr[i] == "$" || arr[i] == "&" || arr[i] == "%" || arr[i] == "/" || arr[i] == "#" || arr[i] == "·"
-		|| arr[i] == "@"|| arr[i] == "|"|| arr[i] == "º" || arr[i] == "ª" || arr[i] == "\\"){ 
+		|| arr[i] == "@"|| arr[i] == "|"|| arr[i] == "º" || arr[i] == "ª" || arr[i] == "\\"){
 	} else {
 	newArr.push(arr[i])
 	}}
@@ -1176,7 +1176,7 @@ function spinWords(string){
 		let reversed = arr[i].split("").reverse().join("")
 		newArr.push(reversed)
 	}
-	}  
+	}
 	let newStr = newArr.join(" ")
 	return newStr
 	}
@@ -1192,7 +1192,7 @@ function rowWeights(array){
 	}
 	for(let j = 1; j<array.length; j=j+2){
 		total2 = total2 + array[j]
-	}  
+	}
 	newArr.push(total1, total2)
 	return newArr
 	}
@@ -1219,7 +1219,7 @@ function valAndUnits(s) {
 		} else {
 			letArr.push(arr[i])
 		}
-	} 
+	}
 	let n = numArr.join('')
 	let l = letArr.join('')
 
@@ -1241,7 +1241,7 @@ function arrMultiply(arr){
 	//your solution
 	for(let i =0; i< arr.length;i++){
 		return (Number(arr[0]) * Number(arr[1])).toString()
-	} 
+	}
 	}
 
 
@@ -1357,11 +1357,11 @@ function binRota(arr){
 	for(let i = 0; i<arr.length; i++){
 	  if(arr.indexOf(arr[i]) % 2 != 0){
 	   let reversed = arr[i].reverse()
-		newArr.push(reversed)    
+		newArr.push(reversed)
   } else {
-	newArr.push(arr[i]) 
-  } 
-  } 
+	newArr.push(arr[i])
+  }
+  }
   let flat = newArr.flat()
   return flat
   }
@@ -1371,70 +1371,70 @@ function binRota(arr){
 // the object LETTERS is preloaded
 // LETTERS['B'] === 'Bravo', etc
 function nato(word) {
-let word1 = word.toLowerCase() 
+let word1 = word.toLowerCase()
 let arr = word1.split("")
 let newArr = []
-  
+
 for (let i = 0; i < arr.length; i++){
  if (arr[i] == "a") {
-    newArr.push("Alpha");
+	newArr.push("Alpha");
   } else if (arr[i] == "b") {
-    newArr.push("Bravo");
+	newArr.push("Bravo");
   } else if (arr[i] == "c") {
-    newArr.push("Charlie");
+	newArr.push("Charlie");
   } else if (arr[i] == "d") {
-    newArr.push("Delta");
+	newArr.push("Delta");
   } else if (arr[i] == "e") {
-    newArr.push("Echo");
+	newArr.push("Echo");
   } else if (arr[i] == "f") {
-    newArr.push("Foxtrot");
+	newArr.push("Foxtrot");
   } else if (arr[i] == "g") {
-    newArr.push("Golf");
+	newArr.push("Golf");
   } else if (arr[i] == "h") {
-    newArr.push("Hotel");
+	newArr.push("Hotel");
   } else if (arr[i] == "i") {
-    newArr.push("India");
+	newArr.push("India");
   } else if (arr[i] == "j") {
-    newArr.push("Juliett");
+	newArr.push("Juliett");
   } else if (arr[i] == "k") {
-    newArr.push("Kilo");
+	newArr.push("Kilo");
   } else if (arr[i] == "l") {
-    newArr.push("Lima");
+	newArr.push("Lima");
   } else if (arr[i] == "m") {
-    newArr.push("Mike");
+	newArr.push("Mike");
   } else if (arr[i] == "n") {
-    newArr.push("November");
+	newArr.push("November");
   } else if (arr[i] == "o") {
-    newArr.push("Oscar");
+	newArr.push("Oscar");
   } else if (arr[i] == "p") {
-    newArr.push("Papa");
+	newArr.push("Papa");
   } else if (arr[i] == "q") {
-    newArr.push("Quebec");
+	newArr.push("Quebec");
   } else if (arr[i] == "r") {
-    newArr.push("Romeo");
+	newArr.push("Romeo");
   } else if (arr[i] == "s") {
-    newArr.push("Sierra");
+	newArr.push("Sierra");
   } else if (arr[i] == "t") {
-    newArr.push("Tango");
+	newArr.push("Tango");
   } else if (arr[i] == "u") {
-    newArr.push("Uniform");
+	newArr.push("Uniform");
   } else if (arr[i] == "v") {
-    newArr.push("Victor");
+	newArr.push("Victor");
   } else if (arr[i] == "w") {
-    newArr.push("Whiskey");
+	newArr.push("Whiskey");
   } else if (arr[i] == "x") {
-    newArr.push("X-ray");
+	newArr.push("X-ray");
   } else if (arr[i] == "y") {
-    newArr.push("Yankee");
+	newArr.push("Yankee");
   } else if (arr[i] == "z") {
-    newArr.push("Zulu");
-  }  
+	newArr.push("Zulu");
+  }
   } let str = newArr.join(" ")
-  return str 
+  return str
 }
 
-	
-//FIXME: Replace all dots	
+
+//FIXME: Replace all dots
 var replaceDots = function(str) {
   return (str.replaceAll('.', '-'));
 }
@@ -1442,30 +1442,30 @@ var replaceDots = function(str) {
 
 //Keep at it until you get it
 function hoopCount (n) {
-   //your code goes here 
+   //your code goes here
   if(n >= 10){
-    return "Great, now move on to tricks"
+	return "Great, now move on to tricks"
   } else {
-    return "Keep at it until you get it"
-  } 
+	return "Keep at it until you get it"
+  }
 }
 
 
 //Simple multiplication
 function simpleMultiplication(number) {
-    // your code........
+	// your code........
   if(number % 2 == 0){
-    return number * 8
+	return number * 8
   } else {
-    return number * 9
+	return number * 9
   }
 }
 
-	
+
 //Is it even?
 const testEven = (n) => n % 2 === 0;
 
-	
+
 //Correct the mistakes of the character recognition software
 function correct(string)
 {
@@ -1473,21 +1473,32 @@ function correct(string)
   const newVal0 = "O"
   const newVal5 = "S"
   const newVal1 = "I"
-    for(let i = 0; i<arr.length; i++){
-      if(arr[i] == "0"){
-        arr[i] = newVal0
-      }
-      if(arr[i] == "5"){
-        arr[i] = newVal5
-      }
-      if(arr[i] == "1"){
-        arr[i] = newVal1
-      }
-    } return arr.join("")
+	for(let i = 0; i<arr.length; i++){
+	  if(arr[i] == "0"){
+		arr[i] = newVal0
+	  }
+	  if(arr[i] == "5"){
+		arr[i] = newVal5
+	  }
+	  if(arr[i] == "1"){
+		arr[i] = newVal1
+	  }
+	} return arr.join("")
 }
 
 
 //Function 1 - hello world
 function greet(){
   return "hello world!"
+}
+
+
+//Shortest word
+	function findShort(s){
+let arr = s.split(" ")
+let newArr = []
+for(let i = 0; i<arr.length; i++){
+ newArr.push(Math.min(arr[i].length))
+}
+return Math.min(...newArr)
 }

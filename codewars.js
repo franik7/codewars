@@ -1502,3 +1502,17 @@ for(let i = 0; i<arr.length; i++){
 }
 return Math.min(...newArr)
 }
+
+
+//Changing letters
+function swap (string) {
+let arr = string.split("")
+let newArr = []
+for(let i = 0; i <arr.length; i++){
+  if(arr[i] == "a" || arr[i] == "e" || arr[i] == "o" || arr[i] == "u" || arr[i] == "i" ){
+	newArr.push(arr[i].toUpperCase())
+  } else {
+	newArr.push(arr[i])
+  }
+} return newArr.join("")
+}

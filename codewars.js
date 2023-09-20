@@ -1516,3 +1516,13 @@ for(let i = 0; i <arr.length; i++){
   }
 } return newArr.join("")
 }
+
+//Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+  // code here
+  if(base % factor == 0){
+    return true
+  } else {
+    return false
+  }
+}	

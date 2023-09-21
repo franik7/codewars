@@ -1517,12 +1517,12 @@ for(let i = 0; i <arr.length; i++){
 } return newArr.join("")
 }
 
-//Grasshopper - Check for factor
-function checkForFactor (base, factor) {
-  // code here
-  if(base % factor == 0){
-    return true
+
+//Grasshopper - If/else syntax debug
+function checkAlive (health) {
+  if (health <= 0) {
+	return false
   } else {
-    return false
+	return true
   }
-}	
+}

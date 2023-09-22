@@ -1526,3 +1526,27 @@ function checkAlive (health) {
 	return true
   }
 }
+
+	
+//Exes and Ohs
+function XO(str) {
+    //code here
+let lowr = str.toLowerCase()
+
+let arr = lowr.split("")
+let arrO = []
+let arrX = []
+for(let i = 0; i< arr.length;i++){
+  if(arr[i] == "o"){
+    arrO.push(arr[i])
+  } else if(arr[i] == "x"){
+     arrX.push(arr[i])
+  }
+}
+  if(arrO.length == arrX.length){
+    return true
+  } else {
+   return false 
+  }
+}
+	

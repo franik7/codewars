@@ -1575,3 +1575,16 @@ const arr3 = newArr.concat(arr);
 let uniqueChars = [...new Set(arr3)];
 return (uniqueChars.join(" "));
 }
+
+
+//Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+ //your code here!
+if(current == "green"){
+	return "yellow"
+  }else if (current == "yellow"){
+	 return "red"
+  }else if (current == "red"){
+	return "green"
+  }
+}

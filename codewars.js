@@ -1527,10 +1527,10 @@ function checkAlive (health) {
   }
 }
 
-	
+
 //Exes and Ohs
 function XO(str) {
-    //code here
+	//code here
 let lowr = str.toLowerCase()
 
 let arr = lowr.split("")
@@ -1538,15 +1538,40 @@ let arrO = []
 let arrX = []
 for(let i = 0; i< arr.length;i++){
   if(arr[i] == "o"){
-    arrO.push(arr[i])
+	arrO.push(arr[i])
   } else if(arr[i] == "x"){
-     arrX.push(arr[i])
+	 arrX.push(arr[i])
   }
 }
   if(arrO.length == arrX.length){
-    return true
+	return true
   } else {
-   return false 
+   return false
+  }
+}.
+
+
+//Powers of 3
+function largestPower(n){
+let i = -1;
+do {
+  i ++;
+} while (Math.pow(3, i) < n);
+return i - 1
+}
+
+
+//ReOrdering
+function reOrdering(text){
+  //your code here
+let arr = text.split(" ")
+let newArr = []
+for(let i= 0; i <arr.length;i++){
+  if(arr[i].charAt(0) === arr[i].charAt(0).toUpperCase()){
+	newArr.push(arr[i])
   }
 }
-	
+const arr3 = newArr.concat(arr);
+let uniqueChars = [...new Set(arr3)];
+return (uniqueChars.join(" "));
+}

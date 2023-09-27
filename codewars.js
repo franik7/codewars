@@ -1588,3 +1588,10 @@ if(current == "green"){
 	return "green"
   }
 }
+
+
+//Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+	//Good Luck!
+  return Math.floor(s * 27.778)
+  }

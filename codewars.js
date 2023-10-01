@@ -1595,3 +1595,11 @@ function cockroachSpeed(s) {
 	//Good Luck!
   return Math.floor(s * 27.778)
   }
+
+
+//JavaScript Array Filter
+function getEvenNumbers(numbersArray){
+	// filter out the odd numbers
+	numbersArray = numbersArray.filter(el => (el%2 == 0))
+	return numbersArray
+  }

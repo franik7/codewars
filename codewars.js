@@ -1603,3 +1603,18 @@ function getEvenNumbers(numbersArray){
 	numbersArray = numbersArray.filter(el => (el%2 == 0))
 	return numbersArray
   }
+
+
+//To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+let newArr = []
+for(let i = 0; i< array.length; i++){  
+	let squared = Math.pow(array[i],2)
+	let sqrt = array[i] / Math.sqrt(array[i])
+	if(Number.isInteger(sqrt)){
+	newArr.push(Math.sqrt(array[i]))
+	} else {
+	newArr.push(squared)
+	} 
+} return newArr
+}

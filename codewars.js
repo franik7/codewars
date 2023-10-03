@@ -1618,3 +1618,11 @@ for(let i = 0; i< array.length; i++){
 	} 
 } return newArr
 }
+
+
+//Ones and Zeros
+const binaryArrayToNumber = arr => {
+	// your code
+  let reg = arr.join("")
+  return parseInt(reg, 2)
+  };

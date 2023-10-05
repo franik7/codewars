@@ -1626,16 +1626,3 @@ const binaryArrayToNumber = arr => {
   let reg = arr.join("")
   return parseInt(reg, 2)
   };
-
-
-//Maximum Multiple
-function maxMultiple(divisor, bound){
-  //your code here
-let i = 0
-let result = 0 
-while (result <= bound) {
-  i = i + 1
-  result = divisor * i
-} 
- return result - divisor
-}

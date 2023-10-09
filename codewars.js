@@ -1688,3 +1688,14 @@ function repeatStr(n, s) {
 	return (newArr3[0] + newArr3[1])  / 2
 	}
 	}
+
+
+	//No Loops 1 - Small enough?
+	function smallEnough(a, limit){
+	let result = a.filter((x) => x <= limit);
+	if (result.length == a.length){
+	return true
+	} else {
+	return false
+	}
+	}

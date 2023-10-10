@@ -1709,3 +1709,17 @@ function repeatStr(n, s) {
 		return a % b + b % a
 	}
 	}
+
+
+	//Maximum Gap (Array Series #4)
+	function maxGap (numbers){
+		//your code here
+		const sorted = [...numbers].sort((a, b) => a - b);
+		let diff = 0
+		for(let i = 0; i < sorted.length;i++){
+		  if(sorted[i+1] - sorted[i] > diff){
+			diff = sorted[i+1] - sorted[i]
+		  } 
+		}
+		 return diff
+	  }

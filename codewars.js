@@ -1777,3 +1777,9 @@ function basicOp(operation, value1, value2){
   return value1/value2
 }
 }
+
+
+//Enumerable Magic - Does My List Include This?
+function include(arr, item){ 
+	return arr.includes(item)
+  }

@@ -1783,3 +1783,13 @@ function basicOp(operation, value1, value2){
 function include(arr, item){ 
 	return arr.includes(item)
   }
+
+
+//Number of People in the Bus
+var number = function(busStops){
+  // Good Luck!
+  let total = 0
+  for(let i = 0; i<busStops.length;i++){
+      total = total + busStops[i][0] - busStops[i][1]
+    }return (total)
+}

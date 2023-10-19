@@ -1793,3 +1793,14 @@ var number = function(busStops){
       total = total + busStops[i][0] - busStops[i][1]
     }return (total)
 }
+
+
+//Thinkful - List and Loop Drills: Lists of lists
+function processData(data){
+	let newArr = []
+	for (let i = 0; i<data.length;i++){
+	  newArr.push(data[i][0] - data[i][1])
+	}
+  const initialValue = 1;
+  return newArr.reduce((accumulator, currentValue) => accumulator * currentValue, initialValue);
+  }

@@ -1804,3 +1804,21 @@ function processData(data){
   const initialValue = 1;
   return newArr.reduce((accumulator, currentValue) => accumulator * currentValue, initialValue);
   }
+
+
+  //Enumerable Magic #25 - Take the First N Elements
+  function take(arr, n) {
+  let newArr = [];
+  for (let i = 0; i < n; i++) {
+    if (arr.length == 0) {
+      return [];
+    } else if (arr.length < n) {
+      newArr.push(arr[i]);
+    } else if (arr.length > n) {
+      newArr.push(arr[i]);
+    }
+  }
+  // Filter out undefined elements and update newArr
+  newArr = newArr.filter((el) => el !== undefined);
+  return newArr;
+}

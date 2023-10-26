@@ -1835,3 +1835,10 @@ function positiveSum(arr) {
   const initialValue = 0;
   return newArr.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
   }
+
+
+  //Sum of array singles
+  function repeats(arr){
+	const result = arr.filter((el) => arr.indexOf(el) == arr.lastIndexOf(el));
+	return(result[0] + result[1])
+	};

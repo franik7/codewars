@@ -1837,8 +1837,19 @@ function positiveSum(arr) {
   }
 
 
-  //Sum of array singles
+//Sum of array singles
   function repeats(arr){
 	const result = arr.filter((el) => arr.indexOf(el) == arr.lastIndexOf(el));
 	return(result[0] + result[1])
 	};
+
+
+//Sum Mixed Array
+function sumMix(x){
+	let newArr = []
+	for(let i = 0; i<x.length;i++){
+	  newArr.push(Number(x[i]))
+	} 
+	let start = 0
+	return newArr.reduce((accum, currVal) => accum + currVal, start)
+	}

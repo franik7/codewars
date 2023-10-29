@@ -1853,3 +1853,14 @@ function sumMix(x){
 	let start = 0
 	return newArr.reduce((accum, currVal) => accum + currVal, start)
 	}
+
+
+//Is he gonna survive?
+function hero(bullets, dragons){
+	//Get Coding!
+	  if(bullets >= dragons * 2){
+		return true
+	  } else {
+		return false
+	  }
+	}

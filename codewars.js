@@ -1864,3 +1864,17 @@ function hero(bullets, dragons){
 		return false
 	  }
 	}
+
+
+//Fake Binary
+function fakeBin(x){
+	let arr = x.split("")
+	let newArr = []
+	for(let i = 0; i<arr.length;i++){
+	  if(arr[i] < 5){
+		newArr.push("0")
+	  } else {
+		newArr.push("1")
+	  }
+	} return newArr.join("")
+  }

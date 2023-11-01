@@ -1878,3 +1878,21 @@ function fakeBin(x){
 	  }
 	} return newArr.join("")
   }
+
+
+//Count Odd Numbers below n
+function oddCount(n){
+	// your code here
+  if(n % 2 == 0){
+	  return n / 2 
+	} else {
+	  return n / 2 - 0.5
+	}
+  }
+
+
+  //Returning Strings
+function greet(name){
+//your code here
+return (`Hello, ${name} how are you doing today?`)
+}

@@ -1896,3 +1896,20 @@ function greet(name){
 //your code here
 return (`Hello, ${name} how are you doing today?`)
 }
+
+
+//Beginner Series #3 Sum of Numbers
+function getSum(a, b){
+   //Good luck!
+  let sum = 0
+  if(a == b){
+    return a
+  } else if (a > b){
+    for (let i = b; i<a+1;i++){
+      sum += i
+    }} else {
+      for (let i = a; i<b+1;i++){
+      sum += i
+    }}
+   return sum
+}

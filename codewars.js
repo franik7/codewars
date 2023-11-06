@@ -1923,3 +1923,16 @@ function paperwork(n, m) {
     return n * m
   }
 }
+
+
+//Leap Years
+function isLeapYear(year) {
+	// TODO
+	if(year % 400 == 0 || year % 4 == 0 && year %100 !== 0){
+	  return true
+	} else if (year % 100 == 0){
+	  return false
+	} else {
+	  return false
+	}
+  }

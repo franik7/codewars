@@ -1937,7 +1937,7 @@ function isLeapYear(year) {
 	}
   }
 
-  
+
 //Two numbers are positive
 function twoArePositive(a, b, c) {
 // Happy Coding
@@ -1955,4 +1955,53 @@ if(sorted[0] > 0 && sorted[1] > 0 && sorted[2] > 0) {
 } else {
 	return false
 }
+}
+
+
+//Cat Years, Dog Years (2)
+var ownedCatAndDog = function(catYears, dogYears) {
+	// Your code here!
+	let catHumanYrs
+	let dogHumanYrs
+	let resultArr = []
+	if(catYears == 0){
+	  catHumanYrs = 0
+	  resultArr.push(catHumanYrs)
+	} else if(catYears < 15){
+	  catHumanYrs = 0
+	  resultArr.push(Math.floor(catHumanYrs))
+	}else if(catYears >= 15 && catYears < 24){
+	  catHumanYrs = 1
+	  resultArr.push(Math.floor(catHumanYrs))
+	} else if (catYears < 24) {
+	  catHumanYrs = 2
+	  resultArr.push(Math.floor(catHumanYrs))
+	} else if (catYears < 28) {
+	  catHumanYrs = 2
+	  resultArr.push(Math.floor(catHumanYrs))
+	} else {
+	  catHumanYrs = (catYears - 24) / 4 + 2
+	  resultArr.push(Math.floor(catHumanYrs))
+	}
+	
+	if(dogYears == 0){
+	  dogHumanYrs = 0
+	  resultArr.push(dogHumanYrs)
+	} else if(dogYears < 15){
+	  dogHumanYrs = 0
+	  resultArr.push(Math.floor(dogHumanYrs))
+	}else if(dogYears >= 15 && dogYears < 24){
+	  dogHumanYrs = 1
+	  resultArr.push(Math.floor(dogHumanYrs))
+	} else if (dogYears < 24) {
+	  dogHumanYrs = 2
+	  resultArr.push(Math.floor(dogHumanYrs))
+	} else if (dogYears < 29) {
+	  dogHumanYrs = 2
+	  resultArr.push(Math.floor(dogHumanYrs))
+	} else {
+	  dogHumanYrs = (dogYears - 24) / 5 + 2
+	  resultArr.push(Math.floor(dogHumanYrs))
+	}
+	return resultArr
 }

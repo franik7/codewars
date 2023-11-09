@@ -1936,3 +1936,23 @@ function isLeapYear(year) {
 	  return false
 	}
   }
+
+  
+//Two numbers are positive
+function twoArePositive(a, b, c) {
+// Happy Coding
+let arr = [a,b,c]
+const sorted = arr.sort((a, b) => a - b);
+console.log(sorted)
+if(sorted[0] > 0 && sorted[1] > 0 && sorted[2] > 0) {
+	return false
+} else if(sorted[0] > 0 && sorted[1] > 0){
+	return true
+} else if (sorted[1] > 0 && sorted[2] > 0){
+	return true
+}else if (sorted[0] > 0 && sorted[2] > 0){
+	return true
+} else {
+	return false
+}
+}

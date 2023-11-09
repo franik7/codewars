@@ -2005,3 +2005,28 @@ var ownedCatAndDog = function(catYears, dogYears) {
 	}
 	return resultArr
 }
+
+
+//Cat years, Dog years
+var humanYearsCatYearsDogYears = function(humanYears) {
+	// Your code here!
+	let yearsArr = []
+	let dogYears
+	let catYears
+	if(humanYears == 1){
+	  dogYears = 15
+	  catYears = 15
+	  yearsArr.push(humanYears, catYears, dogYears)
+	  return yearsArr
+	} else if (humanYears == 2){
+	  dogYears = 24 
+	  catYears = 24
+	  yearsArr.push(humanYears, catYears, dogYears)
+	  return yearsArr
+	} else {
+	  dogYears = 24 + (humanYears - 2) * 5
+	  catYears = 24 + (humanYears - 2) * 4
+	  yearsArr.push(humanYears, catYears, dogYears)
+	  return yearsArr
+	}
+  }

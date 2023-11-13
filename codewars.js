@@ -2029,3 +2029,23 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 	  return yearsArr
 	}
   }
+
+
+//Lost number in number sequence
+function findDeletedNumber(arr, mixArr) {
+  // your code  
+  if(!arr || !mixArr || arr.length === 0 || mixArr.length === 0){
+    return 0
+  }
+  const mixArrSorted = mixArr.sort((a, b) => a - b);
+  for(let i = 0; i<arr.length;i++){
+      if(arr[i] - mixArrSorted[i] != 0) {
+        return arr[i]
+      }  
+  }
+  for(let i = 0; i<arr.length;i++){
+      if(arr[i] - mixArrSorted[i] == 0) {
+        return 0
+      }  
+  }
+}

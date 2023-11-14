@@ -2,6 +2,7 @@ function repeatStr(n, s) {
 return s.repeat(n);
 }
 
+
 // DESCRIPTION:
 // In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
@@ -2031,21 +2032,15 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   }
 
 
-//Lost number in number sequence
-function findDeletedNumber(arr, mixArr) {
-  // your code  
-  if(!arr || !mixArr || arr.length === 0 || mixArr.length === 0){
-    return 0
+//Quadrants
+function quadrant(x, y) {
+	if(x > 0 && y > 0 ){
+	  return 1
+	} else if (x < 0 && y > 0){
+	  return 2
+	} else if (x < 0 && y < 0){
+	  return 3
+	} else {
+	  return 4
+	}
   }
-  const mixArrSorted = mixArr.sort((a, b) => a - b);
-  for(let i = 0; i<arr.length;i++){
-      if(arr[i] - mixArrSorted[i] != 0) {
-        return arr[i]
-      }  
-  }
-  for(let i = 0; i<arr.length;i++){
-      if(arr[i] - mixArrSorted[i] == 0) {
-        return 0
-      }  
-  }
-}

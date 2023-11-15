@@ -2044,3 +2044,15 @@ function quadrant(x, y) {
 	  return 4
 	}
   }
+
+
+  //Pirates!! Are the Cannons ready!??
+  const cannonsReady = (gunners) => {
+	//your solution here
+	let arr = (Object.values(gunners))
+	for(let i = 0; i<arr.length;i++){
+	  if(arr[i] != 'aye'){
+		return "Shiver me timbers!"
+	  } 
+	} return "Fire!"
+  }

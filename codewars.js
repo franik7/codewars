@@ -2072,3 +2072,16 @@ function rentalCarCost(d) {
 function otherAngle(a, b) {
   return 180 - a - b
 }
+
+	
+//Find the next perfect square!
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  let a = Math.sqrt(sq)
+  let n = Math.floor(a)
+  if(Math.sqrt(sq) == n){
+    return (n + 1) * (n + 1)
+  } else {
+    return -1;
+  }
+}

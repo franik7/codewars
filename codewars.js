@@ -2,6 +2,7 @@ function repeatStr(n, s) {
 return s.repeat(n);
 }
 
+
 // DESCRIPTION:
 // In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
@@ -2056,32 +2057,25 @@ function quadrant(x, y) {
 	} return "Fire!"
   }
 
-//Transportation on vacation
-function rentalCarCost(d) {
-  // Your solution here
-    if(d >= 7){
-    return d * 40 - 50
-  } else if (d >= 3){
-    return d * 40 - 20
-  } else if(d < 7) {
-    return d * 40
-  }
-  }
 
-//Third Angle of a Triangle
-function otherAngle(a, b) {
-  return 180 - a - b
-}
-
-	
-//Find the next perfect square!
-function findNextSquare(sq) {
-  // Return the next square if sq is a perfect square, -1 otherwise
-  let a = Math.sqrt(sq)
-  let n = Math.floor(a)
-  if(Math.sqrt(sq) == n){
-    return (n + 1) * (n + 1)
-  } else {
-    return -1;
+  //KISS - Keep It Simple Stupid
+  function isKiss( words ){
+	// Have Fun!
+	let arr = words.split(" ")
+	let countT = 0
+	let countW = 0
+	for(let i = 0; i<arr.length;i++){
+	  countT++ 
+	}   
+	for(let j of arr){
+	  if(j.length > countW){ 
+		countW = j.length
+	} 
+	 }   
+	if(countW <= countT){
+	  return "Good work Joe!"
+	} else {
+		return "Keep It Simple Stupid"
+	}
+  
   }
-}

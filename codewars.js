@@ -2077,5 +2077,15 @@ function quadrant(x, y) {
 	} else {
 		return "Keep It Simple Stupid"
 	}
-  
   }
+
+	
+//Sum Arrays
+function sum (numbers) {
+    "use strict";
+  if(numbers.length == 0){
+    return 0
+  } else {
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue)
+  }
+};

@@ -2100,3 +2100,13 @@ function missingNo(nums) {
        }
   }
 }
+
+	
+//Thinkful - Logic Drills: Umbrella decider
+function takeUmbrella(weather, chance) {
+  //code here 
+  if(weather == "rainy" || weather == "cloudy" && chance > 0.2 || weather == "sunny" && chance > 0.5){
+    return true
+  } else {
+    return false
+  }

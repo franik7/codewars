@@ -2110,3 +2110,25 @@ function takeUmbrella(weather, chance) {
   } else {
     return false
   }
+
+	
+//Convert the score
+	function scoreboard(string) {
+  // code here!
+  let arr = string.split(" ")
+  let score = []
+  for(let i = 0; i<arr.length;i++){
+    if(arr[i] == "nil"){
+      score.push(0)
+    } else if(arr[i] == "one"){score.push(1)}
+    else if(arr[i] == "two"){score.push(2)}
+    else if(arr[i] == "three"){score.push(3)}
+    else if(arr[i] == "four"){score.push(4)}
+    else if(arr[i] == "five"){score.push(5)}
+    else if(arr[i] == "six"){score.push(6)}
+    else if(arr[i] == "seven"){score.push(7)}
+    else if(arr[i] == "eight"){score.push(8)}
+    else if(arr[i] == "nine"){score.push(9)}
+  }
+  return (score)
+}

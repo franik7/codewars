@@ -2132,3 +2132,9 @@ function takeUmbrella(weather, chance) {
   }
   return (score)
 }
+
+	
+//Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.replaceAll("!", "")
+}

@@ -2145,3 +2145,15 @@ function DNAtoRNA(dna) {
   // create a function which returns an RNA sequence from the given DNA sequence
   return dna.replaceAll("T", "U")
 }
+
+
+//Friend or Foe?
+function friend(friends){
+  //your code here
+  let myFriends = []
+  for(let i = 0; i<friends.length;i++){
+    if(friends[i].length === 4){
+      myFriends.push(friends[i])
+    }
+  } return myFriends
+}

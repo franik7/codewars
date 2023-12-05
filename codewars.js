@@ -2157,3 +2157,14 @@ function friend(friends){
     }
   } return myFriends
 }
+
+	
+//Greet Me
+var greet = function(name) {
+  let lowName = name.toLowerCase()
+  let firstLetter = lowName.slice(0, 1)
+  let upFirstLetter = firstLetter.toUpperCase()
+  let theRest = lowName.slice(1)
+
+  return "Hello " + upFirstLetter + theRest + "!"
+};

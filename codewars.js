@@ -2169,6 +2169,7 @@ var greet = function(name) {
   return "Hello " + upFirstLetter + theRest + "!"
 };
 
+	
 //Super Duper Easy
 function problem(x){
   //your code here
@@ -2177,4 +2178,20 @@ function problem(x){
    } else {
      return x * 50 + 6
    }
+}
+
+	
+//Who ate the cookie?
+function cookie(x){
+  // ...
+  let stringName = "Zach"
+  let numName = "Monica"
+  let otherName = "the dog"
+  if(typeof(x) == "string"){
+    return `Who ate the last cookie? It was ${stringName}!`
+  } else if(typeof(x) == "number"){
+    return `Who ate the last cookie? It was ${numName}!`
+  } else {
+    return `Who ate the last cookie? It was ${otherName}!`
+  }
 }

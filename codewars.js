@@ -2195,3 +2195,10 @@ function cookie(x){
     return `Who ate the last cookie? It was ${otherName}!`
   }
 }
+
+
+//Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}	

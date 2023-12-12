@@ -2332,3 +2332,21 @@ function oneDown(str) {
     } return newArr.join("")
   }
 }
+
+
+//Slice the middle of a list backwards
+function reverseMiddle(array) {
+  if (array.length % 2 === 0) {
+    while (array.length > 4) {
+      array.pop();
+      array.shift();
+    }
+  } else {
+    while (array.length > 5) {
+      array.pop();
+      array.shift();
+    }
+  }
+  let middle = array.slice(1, array.length - 1);
+  return middle.reverse(); 
+}

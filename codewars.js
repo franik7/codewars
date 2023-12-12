@@ -2201,4 +2201,134 @@ function cookie(x){
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   // code goes here
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
-}	
+}
+
+
+//One down
+function oneDown(str) {
+  if(typeof(str) != "string"){
+    return "Input is not a string"
+  } else {
+    let newArr = []
+    let arr = str.split("")
+     for(let i = 0; i<arr.length; i++){
+      if(arr[i] == " "){
+        newArr.push(" ")
+      } else if (arr[i] == "a") {
+        newArr.push("Z")
+      } else if(arr[i] == "b"){
+        newArr.push("a")
+      }else if(arr[i] == "c"){
+        newArr.push("b")
+      }else if(arr[i] == "d"){
+        newArr.push("c")
+      }else if(arr[i] == "e"){
+        newArr.push("d")
+      }else if(arr[i] == "f"){
+        newArr.push("e")
+      }else if(arr[i] == "g"){
+        newArr.push("f")
+      }else if(arr[i] == "h"){
+        newArr.push("g")
+      }else if(arr[i] == "i"){
+        newArr.push("h")
+      }else if(arr[i] == "j"){
+        newArr.push("i")
+      }else if(arr[i] == "k"){
+        newArr.push("j")
+      }else if(arr[i] == "l"){
+        newArr.push("k")
+      }else if(arr[i] == "m"){
+        newArr.push("l")
+      }else if(arr[i] == "n"){
+        newArr.push("m")
+      }else if(arr[i] == "o"){
+        newArr.push("n")
+      }else if(arr[i] == "p"){
+        newArr.push("o")
+      }else if(arr[i] == "q"){
+        newArr.push("p")
+      }else if(arr[i] == "r"){
+        newArr.push("q")
+      }else if(arr[i] == "s"){
+        newArr.push("r")
+      }else if(arr[i] == "t"){
+        newArr.push("s")
+      }else if(arr[i] == "u"){
+        newArr.push("t")
+      }else if(arr[i] == "v"){
+        newArr.push("u")
+      }else if(arr[i] == "w"){
+        newArr.push("v")
+      }else if(arr[i] == "x"){
+        newArr.push("w")
+      }else if(arr[i] == "y"){
+        newArr.push("x")
+      }else if(arr[i] == "z"){
+        newArr.push("y")
+      }else if(arr[i] == "A"){
+        newArr.push("z")
+      }else if(arr[i] == "B"){
+        newArr.push("A")
+      }else if(arr[i] == "C"){
+        newArr.push("B")
+      }else if(arr[i] == "D"){
+        newArr.push("C")
+      }else if(arr[i] == "E"){
+        newArr.push("D")
+      }else if(arr[i] == "F"){
+        newArr.push("E")
+      }else if(arr[i] == "G"){
+        newArr.push("F")
+      }else if(arr[i] == "H"){
+        newArr.push("G")
+      }else if(arr[i] == "I"){
+        newArr.push("H")
+      }else if(arr[i] == "J"){
+        newArr.push("I")
+      }else if(arr[i] == "K"){
+        newArr.push("J")
+      }else if(arr[i] == "L"){
+        newArr.push("K")
+      }else if(arr[i] == "M"){
+        newArr.push("L")
+      }else if(arr[i] == "N"){
+        newArr.push("M")
+      }else if(arr[i] == "O"){
+        newArr.push("N")
+      }else if(arr[i] == "P"){
+        newArr.push("O")
+      }else if(arr[i] == "Q"){
+        newArr.push("P")
+      }else if(arr[i] == "R"){
+        newArr.push("Q")
+      }else if(arr[i] == "S"){
+        newArr.push("R")
+      }else if(arr[i] == "T"){
+        newArr.push("S")
+      }else if(arr[i] == "U"){
+        newArr.push("T")
+      }else if(arr[i] == "V"){
+        newArr.push("U")
+      }else if(arr[i] == "W"){
+        newArr.push("V")
+      }else if(arr[i] == "X"){
+        newArr.push("W")
+      }else if(arr[i] == "Y"){
+        newArr.push("X")
+      }else if(arr[i] == "Z"){
+        newArr.push("Y")
+      } else if(arr[i] == "."){
+        newArr.push(".")
+      } else if(arr[i] == ":"){
+        newArr.push(":")
+      } else if(arr[i] == ","){
+        newArr.push(",")
+      }else if(arr[i] == ";"){
+        newArr.push(";")
+      } else if(arr[i] == "'"){
+        newArr.push("'")
+      }
+    } return newArr.join("")
+  }
+}

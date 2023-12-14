@@ -2392,3 +2392,12 @@ return(newArr.join(""))
 }
 
 	
+//Grasshopper - Array Mean
+var findAverage = function (nums) {
+  // Code here
+  let total = 0
+  for(let i = 0; i<nums.length; i++){
+    total = total + nums[i]
+  } return total/nums.length
+}
+	

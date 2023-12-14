@@ -2350,3 +2350,45 @@ function reverseMiddle(array) {
   let middle = array.slice(1, array.length - 1);
   return middle.reverse(); 
 }
+
+	
+//Move all vowels
+function moveVowel(input) {
+  let arr = input.split("");
+  let newArr = [];
+  for(let el of arr){
+    if(el == "b" ||
+       el == "c" ||
+       el == "d" ||
+       el == "f" ||
+       el == "g" ||
+       el == "h" ||
+       el == "j" ||
+       el == "k" ||
+       el == "l" ||
+       el == "m" ||
+       el == "n" ||
+       el == "p" ||
+       el == "q" ||
+       el == "r" ||
+       el == "s" ||
+       el == "t" ||
+       el == "v" ||
+       el == "w" ||
+       el == "x" ||
+       el == "y" ||
+       el == "z" 
+  ){newArr.push(el)} 
+  }
+  for(let el of arr){
+    if(el == "a" ||
+       el == "e" ||
+       el == "i" ||
+       el == "o" ||
+       el == "u"
+      ){newArr.push(el)}
+  } 
+return(newArr.join(""))
+}
+
+	

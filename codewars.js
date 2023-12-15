@@ -2414,3 +2414,17 @@ function openOrSenior(data){
     }  
   } return resultArr 
 }
+
+	
+//Job Matching #1
+function match(candidate, job) {
+  // is this job a valid match for the candidate?
+ let discountedSalary = candidate.minSalary - (candidate.minSalary * .1)
+  if(!candidate.minSalary || !job.maxSalary){
+    throw new Error('Something is missing!');
+  } else if(job.maxSalary >= discountedSalary){
+   return true
+  } else {
+    return false
+  } 
+}

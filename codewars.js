@@ -2428,3 +2428,12 @@ function match(candidate, job) {
     return false
   } 
 }
+
+
+//Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
+function countDevelopers(list) {
+  // your awesome code here :)
+  let developersFromEurope = list.filter((devFromEurope) => (devFromEurope.continent === "Europe"))
+  let jsFromEurope = developersFromEurope.filter((devWithJS) => (devWithJS.language === "JavaScript"))                          
+  return jsFromEurope.length
+  }

@@ -2432,8 +2432,16 @@ function match(candidate, job) {
 
 //Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
 function countDevelopers(list) {
-  // your awesome code here :)
-  let developersFromEurope = list.filter((devFromEurope) => (devFromEurope.continent === "Europe"))
-  let jsFromEurope = developersFromEurope.filter((devWithJS) => (devWithJS.language === "JavaScript"))                          
-  return jsFromEurope.length
-  }
+	// your awesome code here :)
+	let developersFromEurope = list.filter((devFromEurope) => (devFromEurope.continent === "Europe"))
+	let jsFromEurope = developersFromEurope.filter((devWithJS) => (devWithJS.language === "JavaScript"))                          
+	return jsFromEurope.length
+	}
+
+	
+//Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+function greetDevelopers(list) {
+	// thank you for checking out my kata :)
+	let list2 = list.map((el) => el.greeting = `Hi ${el.firstName}, what do you like the most about ${el.language}?`)
+	return (list)
+	}

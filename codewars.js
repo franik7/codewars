@@ -2445,3 +2445,13 @@ function greetDevelopers(list) {
 	let list2 = list.map((el) => el.greeting = `Hi ${el.firstName}, what do you like the most about ${el.language}?`)
 	return (list)
 	}
+
+	
+//Reversed sequence
+const reverseSeq = n => {
+  let newArr = []
+  for(let i = n; i > 0;i--){
+    newArr.push(i)
+  }
+  return newArr
+};

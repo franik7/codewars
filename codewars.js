@@ -2468,3 +2468,19 @@ function blackAndWhite(arr){
     return ("It's a white array") 
   } 
 }
+
+	
+//Training JS #32: methods of Math---round() ceil() and floor()
+function roundIt(n){
+  //coding here...
+  let str = n.toString()
+  let arr = str.split(".")
+  
+  if(arr[0].length < arr[1].length){
+    return Math.ceil(n)
+  } else if (arr[0].length > arr[1].length){
+    return Math.floor(n)
+  } else {
+    return Math.round(n)
+  }
+}

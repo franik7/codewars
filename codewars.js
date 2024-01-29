@@ -2484,3 +2484,17 @@ function roundIt(n){
     return Math.round(n)
   }
 }
+
+	
+//Predict your age!
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  // your code
+  let newArr = []
+  newArr.push(age1,age2,age3,age4,age5,age6,age7,age8)
+  let double = newArr.map((el) => el * el)
+  let initialValue = 0;
+  let sumWithInitial = double.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue)
+  return sqrt =  Math.floor(Math.sqrt(sumWithInitial) / 2) 
+}

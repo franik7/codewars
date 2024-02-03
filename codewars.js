@@ -2498,3 +2498,25 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   initialValue)
   return sqrt =  Math.floor(Math.sqrt(sumWithInitial) / 2) 
 }
+
+
+//Phone Number Creator
+//create a phone number
+function createPhoneNumber(phoneNumber){
+    let areaCode1 = phoneNumber[0]
+    let areaCode2 = phoneNumber[1]
+    let areaCode3 = phoneNumber[2]
+
+    let phoneDigit1 = phoneNumber[3]
+    let phoneDigit2 = phoneNumber[4]
+    let phoneDigit3 = phoneNumber[5]
+    let phoneDigit4 = phoneNumber[6]
+    let phoneDigit5 = phoneNumber[7]
+    let phoneDigit6 = phoneNumber[8]
+    let phoneDigit7 = phoneNumber[9]
+
+    console.log(`(${areaCode1}${areaCode2}${areaCode3}) ${phoneDigit1}${phoneDigit2}${phoneDigit3}-${phoneDigit4}${phoneDigit5}${phoneDigit6}${phoneDigit7}`)
+
+}
+	
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])

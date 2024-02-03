@@ -2516,7 +2516,23 @@ function createPhoneNumber(phoneNumber){
     let phoneDigit7 = phoneNumber[9]
 
     console.log(`(${areaCode1}${areaCode2}${areaCode3}) ${phoneDigit1}${phoneDigit2}${phoneDigit3}-${phoneDigit4}${phoneDigit5}${phoneDigit6}${phoneDigit7}`)
-
 }
 	
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+	
+//Guess The Gifts!
+function guessGifts(wishlist, presents) {
+	  // TODO
+	let cart = [];
+	for(let i = 0; i < wishlist.length; i++){
+	    for(let j = 0; j < presents.length; j++){
+	        if(wishlist[i].size == presents[j].size && wishlist[i].weight == presents[j].weight && wishlist[i].clatters == presents[j].clatters) {
+	            cart.push(wishlist[i].name)
+	        }
+	    }
+	} let uniqueItems = [...new Set(cart)];
+	  return uniqueItems
+}
+
+

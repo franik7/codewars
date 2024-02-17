@@ -2536,3 +2536,19 @@ function guessGifts(wishlist, presents) {
 }
 
 
+//Find the next perfect square!
+function nextPerfectSquare(num) {
+   let squareRooted = Math.sqrt(num)
+
+   if(squareRooted == Math.round(squareRooted)){
+       nextSquareRoot = squareRooted + 1 
+       return nextSquareRoot * nextSquareRoot
+   } else {
+    return -1
+   }
+}
+
+console.log(nextPerfectSquare(64))
+
+
+

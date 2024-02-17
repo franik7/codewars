@@ -2551,4 +2551,19 @@ function nextPerfectSquare(num) {
 console.log(nextPerfectSquare(64))
 
 
+// Sort by Product
+function productSort(numbers) {
+const products = numbers.map((value, index) => {
+    return {
+        original: value,
+        product: value * (index + 1)
+    };
+});
 
+    products.sort((a, b) => a.product - b.product);
+    
+    // const result = numbers.sort((a, b) => a - b);
+    return products.map(value => value.original)
+}
+
+console.log(productSort([23,2,3,4,5]))

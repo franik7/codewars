@@ -2567,3 +2567,10 @@ const products = numbers.map((value, index) => {
 }
 
 console.log(productSort([23,2,3,4,5]))
+
+	
+//Dollars and Cents
+function formatMoney(amount){
+  // your formatting code here
+  return '$' + amount.toFixed(2);
+}

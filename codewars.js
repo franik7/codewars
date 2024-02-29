@@ -2574,3 +2574,66 @@ function formatMoney(amount){
   // your formatting code here
   return '$' + amount.toFixed(2);
 }
+
+
+//Replace With Alphabet Position
+function alphabetPosition(text) {
+  let arr = text.split("")
+  let newArr = []
+  for(let i = 0; i<arr.length;i++){
+    if(arr[i] == "a" || arr[i] == "A"){
+      newArr.push(1)
+    } else if(arr[i] == "b" || arr[i] == "B"){
+      newArr.push(2)
+    } else if(arr[i] == "c" || arr[i] == "C"){
+      newArr.push(3)
+    }else if(arr[i] == "d" || arr[i] == "D"){
+      newArr.push(4)
+    }else if(arr[i] == "e" || arr[i] == "E"){
+      newArr.push(5)
+    }else if(arr[i] == "f" || arr[i] == "F"){
+      newArr.push(6)
+    }else if(arr[i] == "g" || arr[i] == "G"){
+      newArr.push(7)
+    }else if(arr[i] == "h" || arr[i] == "H"){
+      newArr.push(8)
+    }else if(arr[i] == "i" || arr[i] == "I"){
+      newArr.push(9)
+    }else if(arr[i] == "j" || arr[i] == "J"){
+      newArr.push(10)
+    }else if(arr[i] == "k" || arr[i] == "K"){
+      newArr.push(11)
+    }else if(arr[i] == "l" || arr[i] == "L"){
+      newArr.push(12)
+    }else if(arr[i] == "m" || arr[i] == "M"){
+      newArr.push(13)
+    }else if(arr[i] == "n" || arr[i] == "N"){
+      newArr.push(14)
+    }else if(arr[i] == "o" || arr[i] == "O"){
+      newArr.push(15)
+    }else if(arr[i] == "p" || arr[i] == "P"){
+      newArr.push(16)
+    }else if(arr[i] == "q" || arr[i] == "Q"){
+      newArr.push(17)
+    }else if(arr[i] == "r" || arr[i] == "R"){
+      newArr.push(18)
+    }else if(arr[i] == "s" || arr[i] == "S"){
+      newArr.push(19)
+    }else if(arr[i] == "t" || arr[i] == "T"){
+      newArr.push(20)
+    }else if(arr[i] == "u" || arr[i] == "U"){
+      newArr.push(21)
+    }else if(arr[i] == "v" || arr[i] == "V"){
+      newArr.push(22)
+    }else if(arr[i] == "w" || arr[i] == "W"){
+      newArr.push(23)
+    }else if(arr[i] == "x" || arr[i] == "X"){
+      newArr.push(24)
+    }else if(arr[i] == "y" || arr[i] == "Y"){
+      newArr.push(25)
+    }else if(arr[i] == "z" || arr[i] == "Z"){
+      newArr.push(26)
+    } 
+  }
+  return newArr.join(" ")
+}

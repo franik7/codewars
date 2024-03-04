@@ -2637,3 +2637,14 @@ function alphabetPosition(text) {
   }
   return newArr.join(" ")
 }
+
+
+//Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  if(distanceToPump / mpg > fuelLeft) {
+    return false
+  } else {
+    return true
+  }
+};

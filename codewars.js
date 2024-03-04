@@ -2648,3 +2648,60 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return true
   }
 };
+
+	
+//Closest elevator
+function elevator(left, right, call){
+  // code on! :)
+  if(call == right && call == left){
+    return "right"
+  } else if (left - call == 0) {
+    return "left"
+  } else if (right - call == 0) {
+    return "right"
+  } else if (call == 0 && right == left || call == 1 && right == left || call == 2 && right == left){
+    return "right"
+  } else if (call == 0 && right > left){
+    return "left"
+  } else if (call == 0 && right < left){
+    return "right"
+  } else if (call == 1 && right < left) {
+    return "right"
+  } else if (call == 1 && right > left) {
+    return "right"
+  } else if (call == 1 && right < left) {
+    return "left"
+  } else if (call == 2 && right > left) {
+    return "right"
+  } else if (call == 2 && right < left) {
+    return "left"
+ } else if (call == 2 && right < left) {
+    return "left"
+ }
+}
+
+
+//Reverse words
+function reverseWords(str) {
+  // Go for it
+let backway = str.split("").reverse().join("");
+let arr = backway.split(" ")
+let newArr = []
+for(let i = 0; i< arr.length;i++){
+  newArr.unshift(arr[i])
+} 
+return(newArr.join(" "))
+}
+
+
+//
+Filter the number
+var filterString = function(value) {
+  let arr = value.split("")
+  let newArr = []
+  for(let i = 0; i<arr.length;i++){
+    if(arr[i] % 2 === 1 || arr[i] % 2 === 0){
+      newArr.push(arr[i])
+    } 
+  }return Number(newArr.join(""))
+    }  

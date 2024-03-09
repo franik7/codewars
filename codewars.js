@@ -2755,3 +2755,120 @@ if(names.length == 0){
   return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
 }
 }
+
+	
+//Find the missing letter
+function findMissingLetter(arr){
+  
+    
+for(let i = 0; i<arr.length;i++){
+  if(arr[i] === "a" && arr[i + 1] === "c") {
+    return "b"
+  } else if (arr[i] === "b" && arr[i + 1] === "d") {
+    return "c"
+  } else if (arr[i] === "c" && arr[i + 1] === "e") {
+    return "d"
+  }else if (arr[i] === "d" && arr[i + 1] === "f") {
+  return "e";
+} else if (arr[i] === "e" && arr[i + 1] === "g") {
+  return "f";
+} else if (arr[i] === "f" && arr[i + 1] === "h") {
+  return "g";
+} else if (arr[i] === "g" && arr[i + 1] === "i") {
+  return "h";
+} else if (arr[i] === "h" && arr[i + 1] === "j") {
+  return "i";
+} else if (arr[i] === "i" && arr[i + 1] === "k") {
+  return "j";
+} else if (arr[i] === "j" && arr[i + 1] === "l") {
+  return "k";
+} else if (arr[i] === "k" && arr[i + 1] === "m") {
+  return "l";
+} else if (arr[i] === "l" && arr[i + 1] === "n") {
+  return "m";
+} else if (arr[i] === "m" && arr[i + 1] === "o") {
+  return "n";
+} else if (arr[i] === "n" && arr[i + 1] === "p") {
+  return "o";
+} else if (arr[i] === "o" && arr[i + 1] === "q") {
+  return "p";
+} else if (arr[i] === "p" && arr[i + 1] === "r") {
+  return "q";
+} else if (arr[i] === "q" && arr[i + 1] === "s") {
+  return "r";
+} else if (arr[i] === "r" && arr[i + 1] === "t") {
+  return "s";
+} else if (arr[i] === "s" && arr[i + 1] === "u") {
+  return "t";
+} else if (arr[i] === "t" && arr[i + 1] === "v") {
+  return "u";
+} else if (arr[i] === "u" && arr[i + 1] === "w") {
+  return "v";
+} else if (arr[i] === "v" && arr[i + 1] === "x") {
+  return "w";
+} else if (arr[i] === "w" && arr[i + 1] === "y") {
+  return "x";
+} else if (arr[i] === "x" && arr[i + 1] === "z") {
+  return "y";
+} else if (arr[i] === "y" && arr[i + 1] !== "z") {
+  return "z";
+}
+  
+for (let j = 0; j < arr.length; j++) {
+if (arr[j] === "A" && arr[j + 1] === "C") {
+return "B";
+} else if (arr[j] === "B" && arr[j + 1] === "D") {
+return "C";
+} else if (arr[j] === "C" && arr[j + 1] === "E") {
+return "D";
+} else if (arr[j] === "D" && arr[j + 1] === "F") {
+return "E";
+} else if (arr[j] === "E" && arr[j + 1] === "G") {
+return "F";
+} else if (arr[j] === "F" && arr[j + 1] === "H") {
+return "G";
+} else if (arr[j] === "G" && arr[j + 1] === "I") {
+return "H";
+} else if (arr[j] === "H" && arr[j + 1] === "J") {
+return "I";
+} else if (arr[j] === "I" && arr[j + 1] === "K") {
+return "J";
+} else if (arr[j] === "J" && arr[j + 1] === "L") {
+return "K";
+} else if (arr[j] === "K" && arr[j + 1] === "M") {
+return "L";
+} else if (arr[j] === "L" && arr[j + 1] === "N") {
+return "M";
+} else if (arr[j] === "M" && arr[j + 1] === "O") {
+return "N";
+} else if (arr[j] === "N" && arr[j + 1] === "P") {
+return "O";
+} else if (arr[j] === "O" && arr[j + 1] === "Q") {
+return "P";
+} else if (arr[j] === "P" && arr[j + 1] === "R") {
+return "Q";
+} else if (arr[j] === "Q" && arr[j + 1] === "S") {
+return "R";
+} else if (arr[j] === "R" && arr[j + 1] === "T") {
+return "S";
+} else if (arr[j] === "S" && arr[j + 1] === "U") {
+return "T";
+} else if (arr[j] === "T" && arr[j + 1] === "V") {
+return "U";
+} else if (arr[j] === "U" && arr[j + 1] === "W") {
+return "V";
+} else if (arr[j] === "V" && arr[j + 1] === "X") {
+return "W";
+} else if (arr[j] === "W" && arr[j + 1] === "Y") {
+return "X";
+} else if (arr[j] === "X" && arr[j + 1] === "Y") {
+return "Z";
+} else if (arr[j] === "Y" && arr[j + 1] !== "Z") {
+return "Z";
+}
+}
+
+  
+}  
+  
+}

@@ -2866,9 +2866,23 @@ return "Z";
 } else if (arr[j] === "Y" && arr[j + 1] !== "Z") {
 return "Z";
 }
+} 
+}  
 }
 
-  
-}  
-  
+
+//Odd-Even String Sort
+function sortMyString(S) {
+    // your code here
+    let oddArr = []
+    let evenArr = []
+    let arr = S.split("")
+    for(let i = 0; i< arr.length;i++){
+      if(i % 2 === 0){
+        evenArr.push(arr[i])
+      } else {
+        oddArr.push(arr[i])
+      }
+    }
+  return evenArr.join("") + " " + oddArr.join("")
 }

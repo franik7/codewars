@@ -2886,3 +2886,41 @@ function sortMyString(S) {
     }
   return evenArr.join("") + " " + oddArr.join("")
 }
+
+	
+//Take a Ten Minutes Walk
+function isValidWalk(walk) {
+  //insert brilliant code here
+if(walk.length < 4){
+  return false
+}
+  
+let newArr = []
+  for(let i = 0; i<walk.length;i++){
+    if(walk[i] === "n"){
+      newArr.push(1)
+    } else if(walk[i] === "s"){
+      newArr.push(-1)
+    } else if (walk[i] === "e"){
+      newArr.push(2)
+    } else if (walk[i] === "w"){
+      newArr.push(-2)
+    }
+  }   
+  
+const initialValue = 0;
+const sumWithInitial = newArr.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue)
+  
+const initialValueMod = 0;
+const sumWithInitialMod = newArr.reduce(
+  (accumulator, currentValue) => accumulator + Math.abs(currentValue),
+  initialValueMod)
+  
+  if(sumWithInitial == 0 && sumWithInitialMod <= 20 && walk.length <= 10){
+    return true
+  } else {
+    return false
+  } 
+}

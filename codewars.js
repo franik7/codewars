@@ -2924,3 +2924,22 @@ const sumWithInitialMod = newArr.reduce(
     return false
   } 
 }
+
+
+//Are they the "same"?
+function comp(array1, array2){
+
+if(array1 == [] || array1 == null || array2 == [] || array2 == null){
+  return false
+}
+
+const sorted1 = array1.sort((a, b) => a - b);
+const sorted2 = array2.sort((a, b) => a - b);
+
+let newSorted1 = []
+  
+for(let i=0; i<sorted1.length;i++){
+  newSorted1.push(sorted1[i] * sorted1[i])
+}   
+return newSorted1.join("") === sorted2.join("")
+}

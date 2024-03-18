@@ -2950,3 +2950,12 @@ function past(h, m, s){
   //#Happy Coding! ^_^
   return h * 3600000 + m * 60000 + s * 1000
 }
+
+
+//Write shortest function to calculate Average number of Array
+function avg(a){
+  let s = 0
+  for(let i=0;i<a.length;i++){
+    s += a[i]
+  }  return s/a.length
+}

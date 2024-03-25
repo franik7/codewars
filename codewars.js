@@ -2959,3 +2959,15 @@ function avg(a){
     s += a[i]
   }  return s/a.length
 }
+
+//Did she say hallo?
+function validateHello(greetings) {
+  let lower = greetings.toLowerCase()
+  console.log(lower)
+  if(lower == "hello" || lower == "ciao" ||lower == "salut" ||lower == "hallo" ||lower == "hola" ||lower == "ahoj" ||lower == "czesc" || lower.includes("hello") || lower.includes("ciao") || lower.includes("salut") || lower.includes("hallo") || lower.includes("hola") || lower.includes("ahoj") || lower.includes("czesc")){
+    return true
+  } else {
+    return false
+  }
+}
+

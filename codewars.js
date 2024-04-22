@@ -2971,3 +2971,9 @@ function validateHello(greetings) {
   }
 }
 
+
+//Function 2 - squaring an argument
+// Write the "square"-function here
+function square(n){
+  return n * n
+}

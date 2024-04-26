@@ -2977,3 +2977,16 @@ function validateHello(greetings) {
 function square(n){
   return n * n
 }
+
+	
+//No oddities here
+function noOdds( values ){
+  // Return all non-odd values
+  console.log(values)
+  let newArr = []
+  for( i = 0; i<values.length;i++){
+    if(values[i] % 2 == 0){
+      newArr.push(values[i])
+    }
+  } return newArr
+}

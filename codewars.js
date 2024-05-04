@@ -3035,3 +3035,22 @@ function squareSum(numbers){
     sum = sum + Math.pow(numbers[i], 2)
   } return sum
 } 
+
+
+//Alternate Square Sum
+function alternateSqSum(arr) {
+    let sum = arr[0]; 
+    if (arr.length === 0) { 
+        return 0;
+    } else {
+        for (let i = 1; i < arr.length; i++) {
+            if (i % 2 != 0) { 
+                sum += arr[i] ** 2; 
+            } else { 
+                sum += arr[i]; 
+            }
+        }
+        return sum ;
+    }
+}
+

@@ -3054,3 +3054,19 @@ function alternateSqSum(arr) {
     }
 }
 
+
+//Candy problem
+function candies(kids){
+  let diff
+  let total = 0
+  if(kids.length == 0 || kids.length == 1){
+    return -1
+  } 
+  let maxNum = Math.max(...kids)
+  for(let i = 0;i<kids.length;i++){
+    if(kids[i]<maxNum){
+      diff = maxNum - kids[i]
+      total += diff
+    } 
+  }  return total
+}

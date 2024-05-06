@@ -3070,3 +3070,26 @@ function candies(kids){
     } 
   }  return total
 }
+
+	
+//Anagram Detection
+// write the function isAnagram
+var isAnagram = function(test, original) {
+  let lowTest = test.toLowerCase()
+  let lowOrig = original.toLowerCase()
+  
+  let arrTest = lowTest.split("")
+  let arrOrig = lowOrig.split("")
+  
+  let sortedTest = arrTest.sort()
+  let sortedOriginal = arrOrig.sort()
+  
+  let joinedTest = sortedTest.join("")
+  let joinedOrig = sortedOriginal.join("")
+  
+  if(joinedTest == joinedOrig){
+    return true
+  } else {
+    return false
+  }
+};

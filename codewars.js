@@ -3093,3 +3093,17 @@ var isAnagram = function(test, original) {
     return false
   }
 };
+
+
+//Vowel remover
+function shortcut (string) {
+  let arr = string.split("")
+  let newArr = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] == "a" || arr[i] == "e" || arr[i] == "i" || arr[i] == "o" || arr[i] == "u"){
+  } else {
+    newArr.push(arr[i])
+  }
+  }
+  return newArr.join("")
+}

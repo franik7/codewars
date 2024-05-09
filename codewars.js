@@ -3107,3 +3107,18 @@ function shortcut (string) {
   }
   return newArr.join("")
 }
+
+
+//Wordsearch
+function wordSearch(word, text){
+  console.log(word)
+  console.log(text)
+  
+
+  let result = text.includes(word);
+  if(text.includes(word) && word[word.length] === " " && word[word.length - word.length - 1]){
+    return true
+  } else {
+    return false
+  }
+}

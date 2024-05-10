@@ -3109,16 +3109,20 @@ function shortcut (string) {
 }
 
 
-//Wordsearch
-function wordSearch(word, text){
-  console.log(word)
-  console.log(text)
-  
-
-  let result = text.includes(word);
-  if(text.includes(word) && word[word.length] === " " && word[word.length - word.length - 1]){
-    return true
+//Age Range Compatibility Equation
+function datingRange(age){
+  //return min-max
+  let min
+  let max
+  if(age <= 14){
+    console.log(age)
+    min = Math.floor(age - 0.10 * age)
+    max = Math.floor(age + 0.10 * age)
+    return `${min}-${max}`
   } else {
-    return false
+    console.log(age)
+    min = Math.floor(age / 2 + 7)
+    max = Math.floor((age - 7) * 2)
+    return `${min}-${max}`
   }
 }

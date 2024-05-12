@@ -3126,3 +3126,19 @@ function datingRange(age){
     return `${min}-${max}`
   }
 }
+
+
+//Sort and Star
+function twoSort(s) {
+  s.sort()
+  let string = s[0]
+  let arr = string.split("")
+  let newArr = []
+  for(let i = 0; i<arr.length;i++){
+    newArr.push(arr[i])
+    newArr.push('***')
+  }
+  let final = newArr.join("")
+  final = final.substring(0, final.length - 3);
+return final
+}

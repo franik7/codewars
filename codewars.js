@@ -3142,3 +3142,20 @@ function twoSort(s) {
   final = final.substring(0, final.length - 3);
 return final
 }
+
+
+//Holiday VII - Local Talk
+function pak(s){
+  if(s.length == 0 || !s.trim().length) {
+    return ""
+  }
+    let arr = s.split(" ")
+  let newArr = []
+  for(let i = 0;i<arr.length;i++){
+    newArr.push(arr[i])
+    newArr.push("pak")
+  }
+  let newS = newArr.join(" ")
+  newS = newS.substring(0, newS.length - 4);
+  return newS
+}

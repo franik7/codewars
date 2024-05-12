@@ -3146,7 +3146,7 @@ return final
 
 //Holiday VII - Local Talk
 function pak(s){
-  if(s.length == 0 || !s.trim().length) {
+  if(s.length == 0 || s.trim().length == 0) {
     return ""
   }
     let arr = s.split(" ")

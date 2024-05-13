@@ -3159,3 +3159,27 @@ function pak(s){
   newS = newS.substring(0, newS.length - 4);
   return newS
 }
+
+
+//Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if (dadYearsOld / 2 === sonYearsOld) {
+    return 0;
+  } else if (dadYearsOld / 2 > sonYearsOld) {
+    for (let i = 1; i < 99; i++) {
+      sonYearsOld++;
+      dadYearsOld++;
+      if (sonYearsOld * 2 === dadYearsOld) {
+        return i;
+      }
+    }
+  } else if (dadYearsOld / 2 < sonYearsOld) {
+    for (let j = 99; j > 0; j--) {
+      sonYearsOld--;
+      dadYearsOld--;
+      if (sonYearsOld * 2 === dadYearsOld) {
+        return 99 -j + 1;
+      }
+    }
+  }
+}

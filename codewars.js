@@ -3183,3 +3183,16 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
     }
   }
 }
+
+
+//Maximum Product
+function adjacentElementsProduct(array) {
+  let max = -99999999
+  let tempMax
+  for(let i = 0;i<array.length;i++){
+    tempMax = array[i] * array[i + 1]    
+     if (tempMax > max){
+      max = tempMax
+     } 
+  }return max
+}

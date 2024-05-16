@@ -3196,3 +3196,21 @@ function adjacentElementsProduct(array) {
      } 
   }return max
 }
+
+	
+//Well of Ideas - Easy Version
+function well(x){
+let newArr = []
+  for(let i =0;i<x.length;i++){
+    if(x[i] == "good"){
+      newArr.push(x[i])
+    }
+  } 
+  if(newArr.length == 0){
+    return "Fail!"
+  } else if (newArr.length == 1 || newArr.length == 2){
+    return "Publish!"
+  } else {
+    return "I smell a series!"
+  }
+}

@@ -3214,3 +3214,15 @@ let newArr = []
     return "I smell a series!"
   }
 }
+
+	
+//Cat and Mouse - Easy Version
+function catMouse(x){
+  x = x.slice(1)
+  x = x.slice(0,-1)
+  if(x.length > 3){
+    return "Escaped!"
+  } else {
+    return "Caught!"
+  }
+}

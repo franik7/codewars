@@ -3226,3 +3226,25 @@ function catMouse(x){
     return "Caught!"
   }
 }
+
+	
+//Credit Card Mask
+// return masked string
+function maskify(cc) {
+  let reversed = []
+  for(let i = cc.length - 1; i >= 0; i--){
+    reversed.push(cc[i])
+  }
+let cut = reversed.slice(0,4)
+let stars = []
+
+for(let j = 0; j<cc.length - 4;j++){
+    stars.push("#")
+  }
+const combined = cut.concat(stars)
+let final = []
+for(let k = combined.length - 1; k >=0;k--){
+    final.push(combined[k])
+  }
+  return final.join("")  
+}

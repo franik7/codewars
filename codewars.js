@@ -3254,3 +3254,6 @@ for(let k = combined.length - 1; k >=0;k--){
 var sortArray = function(value) {
   return value.split('').sort((c, p) => c / p ).join('');
 }
+
+
+//Failed Filter - Bug Fixing #3

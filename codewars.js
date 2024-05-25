@@ -3269,3 +3269,9 @@ var FilterNumbers = function(str) {
   } 
   return newArr.join('')
 };
+
+
+//Grasshopper - Debug sayHello
+function sayHello(name) {
+  return 'Hello, ' + name
+}

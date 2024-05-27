@@ -3275,3 +3275,17 @@ var FilterNumbers = function(str) {
 function sayHello(name) {
   return 'Hello, ' + name
 }
+
+
+//Growth of a Population
+function nbYear(p0, percent, aug, p) {
+    let count = 0; 
+    for (let i = 0; i < 999; i++) { 
+        if (p0 >= p) { 
+            return count;
+        }
+        p0 = Math.floor(p0 + p0 * (percent / 100) + aug);
+        count++;
+    }
+}
+

@@ -3306,3 +3306,14 @@ function plural(n) {
     return true
   }
 }
+
+
+//Testing 1-2-3
+var number=function(array){
+  //your awesome code here
+  let newArr = []
+  for(let i = 0; i<array.length;i++){
+    newArr.push(`${i + 1}: ${array[i]}`)
+  }
+  return newArr
+}

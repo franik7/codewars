@@ -3331,3 +3331,10 @@ function finalGrade (exam, projects) {
     return 0
   }
 }
+
+
+//Bin to Decimal
+function binToDec(bin) {
+  // TODO
+  return parseInt(bin, 2)
+}

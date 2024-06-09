@@ -3365,3 +3365,12 @@ function mergeArrays(arr1, arr2) {
   let backToArray = Array.from(set)
   return backToArray
   }
+
+
+//Surface Area and Volume of a Box
+function getSize(width, height, depth){
+  let array = []
+  array.push(2 * width * height + 2 * width * depth+ 2 * height * depth)
+  array.push(width * height * depth)
+  return array 
+}

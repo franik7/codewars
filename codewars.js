@@ -3355,4 +3355,13 @@ function getGrade(s1, s2, s3) {
         return 'F';
     }
 }
+
 	
+//Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+  let arr3 = arr1.concat(arr2);
+  let sorted = arr3.sort((a,b) => a - b)
+  let set = new Set(sorted);
+  let backToArray = Array.from(set)
+  return backToArray
+  }

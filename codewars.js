@@ -3374,3 +3374,13 @@ function getSize(width, height, depth){
   array.push(width * height * depth)
   return array 
 }
+
+	
+//Alan Partridge II - Apple Turnover
+function apple(x){
+  if(x * x > 1000){
+    return "It's hotter than the sun!!"
+  } else {
+    return "Help yourself to a honeycomb Yorkie for the glovebox."
+  }
+}

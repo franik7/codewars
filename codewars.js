@@ -3384,3 +3384,17 @@ function apple(x){
     return "Help yourself to a honeycomb Yorkie for the glovebox."
   }
 }
+
+	
+//Summing a number's digits
+function sumDigits(number) {
+  let str = number.toString()
+  let arr = str.split("")  
+  let sum = 0
+  for(let i = 0; i< arr.length;i++){
+     if (!isNaN(arr[i])){
+      sum += Math.abs(arr[i])
+    }  
+  }
+  return sum
+}

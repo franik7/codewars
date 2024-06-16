@@ -3398,3 +3398,16 @@ function sumDigits(number) {
   }
   return sum
 }
+
+	
+//Is it a palindrome?
+function isPalindrome(x) {
+  // your code here
+  let lower = x.toLowerCase()
+  let arr = lower.split("")
+  let newArr =[]
+  for (let i = arr.length - 1;i>=0;i--){
+    newArr.push(arr[i])
+  }
+  return x == newArr.join("")
+}

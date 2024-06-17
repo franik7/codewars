@@ -3410,3 +3410,12 @@ function isPalindrome(x) {
   }
   return x.toLowerCase() == newArr.join("").toLowerCase()
 }
+
+
+//Largest pair sum in array
+function largestPairSum (numbers) {
+  //TODO: Write your Code here
+  let sorted = numbers.sort((a,b) => a-b)
+  return sorted[sorted.length - 1] + sorted[sorted.length - 2]
+}
+	

@@ -3418,4 +3418,13 @@ function largestPairSum (numbers) {
   let sorted = numbers.sort((a,b) => a-b)
   return sorted[sorted.length - 1] + sorted[sorted.length - 2]
 }
-	
+
+
+//What is between?
+function between(a, b) {
+  // your code here
+  let newArr = []
+  for(let i = a; i<b+1;i++){
+    newArr.push(i)
+  } return newArr
+}

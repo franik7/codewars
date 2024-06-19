@@ -3428,3 +3428,14 @@ function between(a, b) {
     newArr.push(i)
   } return newArr
 }
+
+	
+//Area or Perimeter
+const areaOrPerimeter = function(l , w) {
+  // Return your answer
+  if(l === w){
+    return l * w
+  } else {
+    return 2*l + 2*w
+  }
+}

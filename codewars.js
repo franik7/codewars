@@ -3439,3 +3439,21 @@ const areaOrPerimeter = function(l , w) {
     return 2*l + 2*w
   }
 }
+
+
+//How old will I be in 2099?
+function  calculateAge(yearOfBirth, setYear) { 
+// enter your code here.
+  if(yearOfBirth == setYear){
+    return `You were born this very year!`
+  } else if(yearOfBirth + 1 == setYear){
+    return `You are ${setYear - yearOfBirth} year old.`
+  } else if(yearOfBirth - 1 == setYear){
+    return `You will be born in 1 year.`
+  } else if(yearOfBirth < setYear){
+    return `You are ${setYear - yearOfBirth} years old.`
+  } else {
+    return `You will be born in ${yearOfBirth - setYear} years.`
+  }
+}
+

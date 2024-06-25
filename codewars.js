@@ -3485,3 +3485,10 @@ class Kata {
     return length*width*height
   }
 }
+
+
+//You Can't Code Under Pressure #1
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return 2*i;
+}

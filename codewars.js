@@ -3507,3 +3507,10 @@ function bmi(weight, height) {
     return "Obese"
   }
 }
+
+
+//5 without numbers !!
+function unusualFive() {
+  let five = "aaaaa"
+  return five.length
+}

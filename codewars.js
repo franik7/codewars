@@ -3514,3 +3514,10 @@ function unusualFive() {
   let five = "aaaaa"
   return five.length
 }
+
+
+//Hex to Decimal
+function hexToDec(hexString){
+  //your code here
+  return parseInt(hexString, 16);
+}

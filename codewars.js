@@ -3579,3 +3579,18 @@ function position(letter) {
     return "Position of alphabet: 26";
   } 
 }
+
+
+//How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here'
+  let sum = classPoints.reduce(
+  (accumulator, currentValue) => accumulator + currentValue);
+  let average = sum / classPoints.length
+  
+  if(average > yourPoints){
+    return false
+  } else {
+    return true
+  }
+}

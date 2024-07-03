@@ -3600,3 +3600,13 @@ function betterThanAverage(classPoints, yourPoints) {
 function getChar(c){
   return String.fromCharCode(c);
 }
+
+	
+//Sort Numbers
+function solution(nums){
+  if(nums == null || nums == []){
+    return []
+  } else {
+    return nums.sort((a,b) => a-b)
+  }
+}

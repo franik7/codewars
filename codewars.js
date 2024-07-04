@@ -3610,3 +3610,9 @@ function solution(nums){
     return nums.sort((a,b) => a-b)
   }
 }
+
+	
+//Grasshopper - Function syntax debugging
+function main (verb, noun){
+  return verb + noun
+}

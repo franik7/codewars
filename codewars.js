@@ -3643,20 +3643,4 @@ function check(a, x) {
 }
 
 	
-//Stop gninnipS My sdroW!
-function spinWords(string){
-  //TODO Have fun :)
-  
-let arr = string.split(" ")
-let newArr = []
-for(let i = 0; i<arr.length;i++){
-  if(arr[i].length < 5){
-    newArr.push(arr[i])
-  } else {
-    let reversed = arr[i].split("").reverse().join("")
-    newArr.push(reversed)
-  }
-}  
-  let newStr = newArr.join(" ")
-  return newStr
-}
+

@@ -3662,3 +3662,13 @@ function getDrinkByProfession(param){
     return "Beer"
   }
 }
+
+	
+//Exclamation marks series #1: Remove an exclamation mark from the end of string
+function remove(s) {
+    if (s[s.length - 1] === "!") {
+        return s.slice(0, s.length - 1);
+    } else {
+        return s
+    }
+}

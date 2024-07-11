@@ -3672,3 +3672,16 @@ function remove(s) {
         return s
     }
 }
+
+	
+//The Coupon Code
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+const curDateObj = new Date(currentDate);
+const expDateObj = new Date(expirationDate);
+if(enteredCode === correctCode && curDateObj <= expDateObj){
+    return true 
+  } else {
+    return false
+  }
+}
+

@@ -3710,3 +3710,13 @@ function exponent(a,b){
 function subt(a,b){
     return a-b
 }
+
+	
+//Find out whether the shape is a cube
+function cubeChecker(volume, side){
+  if(volume <= 0 || Math.cbrt(volume) != side){
+    return false
+  } else if(Math.cbrt(volume) === side){
+    return true
+  } 
+};

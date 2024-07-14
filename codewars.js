@@ -3720,3 +3720,14 @@ function cubeChecker(volume, side){
     return true
   } 
 };
+
+
+//Sum of differences in array
+function sumOfDifferences(arr) {
+  let sum = 0
+  arr.sort((a,b) => a - b)
+  for(let i = arr.length - 1; i > 0 ; i--){
+    sum += arr[i] - arr[i-1]
+  }
+  return sum
+}

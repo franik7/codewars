@@ -3738,3 +3738,10 @@ function addFive(num) {
   var total = num + 5
   return num
 }
+
+
+//Welcome to the City
+function sayHello( name, city, state ) {
+    let greeting = name.join(" ")
+    return `Hello, ${greeting}! Welcome to ${city}, ${state}!`
+}

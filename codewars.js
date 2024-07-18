@@ -3745,3 +3745,15 @@ function sayHello( name, city, state ) {
     let greeting = name.join(" ")
     return `Hello, ${greeting}! Welcome to ${city}, ${state}!`
 }
+
+	
+//Grasshopper - Terminal game combat function
+function combat(health, damage) {
+  // Write your code here
+  let newHealth = health - damage
+  if(newHealth >= 0){
+    return newHealth
+  } else {
+    return 0
+  }
+}

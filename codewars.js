@@ -3757,3 +3757,23 @@ function combat(health, damage) {
     return 0
   }
 }
+
+
+//No zeros for heros
+function noBoringZeros(n) {
+  let string = n.toString();
+
+  let array = string.split("");
+  let newArr = [];
+
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (array[i] != '0') {
+      newArr = array.slice(0, i + 1);
+      break;
+    }
+  }
+
+  let newStr = newArr.join("");
+  return Number(newStr);
+}
+

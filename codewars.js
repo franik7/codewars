@@ -3801,3 +3801,15 @@ function sortByLength (array) {
   const sorted = [...array].sort((a, b) => a.length - b.length);
   return sorted
 }
+
+
+//Square Every Digit
+function squareDigits(num){
+  let string = num.toString()
+  let arr = string.split("")
+  let concatArr = []
+  for(let i = 0;i<arr.length;i++){
+    concatArr.push(arr[i] * arr[i])
+  }
+  return Number(concatArr.join(""))
+}

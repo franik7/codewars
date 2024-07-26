@@ -3836,3 +3836,14 @@ function whatday(num) {
     return "Wrong, please enter a number between 1 and 7"
   }
 }
+
+
+//The Wide-Mouthed frog!
+function mouthSize(animal) {
+  // code here
+  if(animal == 'alligator'){
+    return 'small'
+  } else {
+    return 'wide'
+  }
+}

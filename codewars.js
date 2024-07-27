@@ -3847,3 +3847,18 @@ function mouthSize(animal) {
     return 'wide'
   }
 }
+
+
+//Lario and Muigi Pipe Problem
+function pipeFix(numbers){
+  let newArr = []
+  
+  let first = numbers[0]
+  let last = numbers[numbers.length - 1]
+  
+  for(let i = first;i<last+1;i++){
+    newArr.push(i)
+  } 
+
+  return newArr
+}

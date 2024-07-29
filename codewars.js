@@ -3862,3 +3862,17 @@ function pipeFix(numbers){
 
   return newArr
 }
+
+
+//If you can't sleep, just count sheep!!
+var countSheep = function (num){
+  //your code here
+  let sheep =''
+  if(num == 0){
+    return ''} 
+  else {
+    for(let i =1; i<= num;i++){
+      sheep += `${i} sheep...` 
+    } return sheep
+  }
+}

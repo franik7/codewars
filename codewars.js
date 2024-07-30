@@ -3876,3 +3876,23 @@ var countSheep = function (num){
     } return sheep
   }
 }
+
+	
+//Remove First and Last Character Part Two
+function array(string) {
+  // TODO
+  let newArr = []
+  if(string.length<=2){
+    return null
+  } else {
+    let arr = string.split(",")
+    console.log(arr)
+    if(arr.length == 1 || arr.length == 2){
+      return null
+    } 
+    for(let i=1;i<arr.length-1;i++){
+      newArr.push(arr[i])
+    }
+  } 
+    return newArr.join(" ")
+}

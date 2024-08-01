@@ -3896,3 +3896,17 @@ function array(string) {
   } 
     return newArr.join(" ")
 }
+
+
+//Contamination #1 -String-
+function contamination(text, char){
+  // Code here ;)
+  if(text == "" || char == ""){
+    return ""
+  } else {
+    let newArr = []
+    for(let i = 0; i<text.length;i++){
+      newArr.push(char)
+    } return newArr.join("")
+  } 
+}

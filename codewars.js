@@ -3910,3 +3910,10 @@ function contamination(text, char){
     } return newArr.join("")
   } 
 }
+
+
+//Multiply the number
+function multiply(number){
+  //your code here
+  return number * Math.pow(5, Math.abs(number).toString().length)
+}

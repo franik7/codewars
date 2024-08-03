@@ -3917,3 +3917,14 @@ function multiply(number){
   //your code here
   return number * Math.pow(5, Math.abs(number).toString().length)
 }
+
+
+//Name Shuffler
+function nameShuffler(str){
+  //Shuffle It
+  let arr = str.split(" ")
+  let newArr = []
+  for (let i =0;i<arr.length;i++){
+    newArr.unshift(arr[i])
+  } return newArr.join(" ")
+}

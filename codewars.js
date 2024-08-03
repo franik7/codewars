@@ -3928,3 +3928,10 @@ function nameShuffler(str){
     newArr.unshift(arr[i])
   } return newArr.join(" ")
 }
+
+
+//Printing Array elements with Comma delimiters
+function printArray(array){
+  //show me the code!
+  return array.join(",")
+}

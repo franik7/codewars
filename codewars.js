@@ -4016,3 +4016,16 @@ function rainAmount(mm){
          return "Your plant has had more than enough water for today!"
     };
 }
+
+//Sum of Multiples
+function sumMul(n,m){
+//your idea here
+  let sum = 0
+  if(n <= 0 || m <= 0){
+    return "INVALID"
+  }
+  for(let i = 0; i < m; i = i + n){
+    sum += i
+  }
+  return sum
+}

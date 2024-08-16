@@ -4053,3 +4053,16 @@ function _if(bool, func1, func2) {
     return func2()
   }
 }
+
+	
+//Add Length
+function addLength(str) {
+//start-here
+  let newArr = []
+  let arr = str.split(" ")
+  
+  for(let i = 0;i<arr.length;i++){
+    newArr.push(`${arr[i]} ${arr[i].length}`)
+  }
+  return newArr
+}

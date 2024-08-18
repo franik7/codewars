@@ -4066,3 +4066,15 @@ function addLength(str) {
   }
   return newArr
 }
+
+
+//Sum of Minimums!
+function sumOfMinimums(arr) {
+  // your code here
+  let newArr= []
+  for(let i = 0; i<arr.length;i++){
+    arr[i].sort((a,b) => a - b)
+    newArr.push(arr[i][0])
+  } 
+  return newArr.reduce((accumulator, currentValue) => accumulator + currentValue)
+}

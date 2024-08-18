@@ -4078,3 +4078,10 @@ function sumOfMinimums(arr) {
   } 
   return newArr.reduce((accumulator, currentValue) => accumulator + currentValue)
 }
+
+	
+//Are arrow functions odd?
+function odds(values){
+  // arrow it
+  return values.filter(el => el % 2 != 0);
+}

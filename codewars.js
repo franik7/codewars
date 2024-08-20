@@ -4105,3 +4105,14 @@ function mxdiflg(a1, a2) {
     return secondScenario
   }
 }
+
+
+//Do you speak "English"?
+function spEng(sentence){
+//write your code here
+  let lower = sentence.toLowerCase()
+  if(lower.includes('english')){
+    return true
+  } else {
+    return false
+  }

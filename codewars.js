@@ -4128,3 +4128,18 @@ function addTo(num){
   return websites
 } 
 addTo("codewars")
+
+
+//Bumps in the Road
+function bump(x){
+  let bumpsCounter = []
+  for(let i = 0; i<x.length;i++){
+    if(x[i] == "n"){
+      bumpsCounter.push(x[i])
+    }
+  } if(bumpsCounter.length <= 15){
+    return "Woohoo!"
+  } else {
+    return "Car Dead"
+  }
+}

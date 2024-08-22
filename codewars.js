@@ -4116,3 +4116,15 @@ function spEng(sentence){
   } else {
     return false
   }
+
+
+//Kata Example Twist
+// add the value "codewars" to the websites array 1,000 times
+var websites = []
+function addTo(num){
+  for(let i=0;i<1000;i++){
+    websites.push(num)
+  }
+  return websites
+} 
+addTo("codewars")

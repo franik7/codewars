@@ -4143,3 +4143,12 @@ function bump(x){
     return "Car Dead"
   }
 }
+
+
+//Convert an array of strings to array of numbers
+function toNumberArray(stringarray){
+  let numArray = []
+  for(let i = 0; i<stringarray.length;i++){
+    numArray.push(Number(stringarray[i]))
+  } return numArray
+}

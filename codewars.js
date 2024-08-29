@@ -4187,3 +4187,20 @@ function countBy(x, n) {
   }
   return z;
 }
+
+
+//Round up to the next multiple of 5
+function roundToNext5(n){
+  // ...
+  if(n == 0){
+    return 0
+  } else if(n % 5 == 0 || n % (-5) == 0){
+       return n
+  } else {
+      for(let i = n; i<=n+4; i++){
+        if(i % 5 == 0){
+          return i
+      } 
+    }
+  }
+}

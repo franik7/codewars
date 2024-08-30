@@ -4204,3 +4204,22 @@ function roundToNext5(n){
     }
   }
 }
+
+	
+//Simple remove duplicates
+function solve(arr) {
+  
+  let newArr = []
+  for(let i = 0;i<arr.length;i++){
+    newArr.unshift(arr[i])
+  }
+  
+  let set = new Set(newArr);
+  let newArr2 = Array.from(set);
+  
+  let newArr3 = []
+  for(let j = 0;j<newArr2.length;j++){
+    newArr3.unshift(newArr2[j])
+  }
+  return newArr3
+}

@@ -4284,3 +4284,18 @@ function sumCubes(n){
     sum = sum + Math.pow(i, 3)
   } return sum
 }
+
+
+//Make a function that does arithmetic!
+function arithmetic(a, b, operator){
+  //your code here!
+  if(operator == "add"){
+    return a + b
+  } else if (operator == "subtract"){
+    return a - b
+  } else if (operator == "divide"){
+    return a / b
+  } else {
+    return a * b
+  }
+}

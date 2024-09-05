@@ -4299,3 +4299,14 @@ function arithmetic(a, b, operator){
     return a * b
   }
 }
+
+	
+//For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+var quote = function(fighter) {
+  // your code here
+  if(fighter.toLowerCase() == "conor mcgregor"){
+    return "I'd like to take this chance to apologize.. To absolutely NOBODY!"
+  } else  {
+    return "I am not impressed by your performance."
+  }
+};

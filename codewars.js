@@ -4310,3 +4310,24 @@ var quote = function(fighter) {
     return "I am not impressed by your performance."
   }
 };
+
+
+//Is there a vowel in there?
+function isVow(a){
+let newArr = []
+for(let i = 0;i<a.length;i++){
+    if(a[i] == 97){
+      newArr.push("a")
+    } else if (a[i] == 101){
+      newArr.push("e")
+    } else if (a[i] == 105){
+      newArr.push("i")
+    } else if (a[i] == 111){
+      newArr.push("o")
+    } else if (a[i] == 117){
+      newArr.push("u")
+    } else {
+      newArr.push(a[i])
+    }   
+  } return newArr
+}

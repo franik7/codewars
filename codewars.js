@@ -4331,3 +4331,26 @@ for(let i = 0;i<a.length;i++){
     }   
   } return newArr
 }
+
+
+//Sum of Odd Cubed Numbers
+function cubeOdd(arr) {
+  if (arr.length === 0) {
+    return undefined;
+  }
+
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    // Check for non-number values
+    if (isNaN(arr[i])) {
+      return undefined;
+    }
+    if (arr[i] % 2 !== 0) {
+      newArr.push(Math.pow(arr[i], 3));
+    }
+  }
+  if (newArr.length === 0) {
+    return 0;
+  }
+  return newArr.reduce((a, b) => a + b);
+}

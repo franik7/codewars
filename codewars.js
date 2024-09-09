@@ -4354,3 +4354,12 @@ function cubeOdd(arr) {
   }
   return newArr.reduce((a, b) => a + b);
 }
+
+
+//Number of Decimal Digits
+function digits(n) {
+  // TODO
+  let str = n.toString()
+  let arr = str.split("")
+  return arr.length
+}

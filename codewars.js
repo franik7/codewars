@@ -4363,3 +4363,15 @@ function digits(n) {
   let arr = str.split("")
   return arr.length
 }
+
+	
+//Spacify
+function spacify(str) {
+  // return 
+  let arr = str.split("")
+  let newArr = []
+  for(let i = 0; i<arr.length; i++){
+    newArr.push(arr[i])
+    newArr.push(" ")
+  } return newArr.join("").slice(0, -1)
+}

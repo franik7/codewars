@@ -4375,3 +4375,19 @@ function spacify(str) {
     newArr.push(" ")
   } return newArr.join("").slice(0, -1)
 }
+
+	
+//Who is going to pay for the wall?
+function whoIsPaying(name){
+  //your code here
+  let arr = []
+  let secondPart = name.slice(0,2)
+  if(name.length <= 2){
+    arr.push(name)
+    return arr
+  } else {
+  arr.push(name)
+  arr.push(secondPart)
+    return arr
+  }
+}

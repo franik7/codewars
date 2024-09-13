@@ -4404,3 +4404,12 @@ function uefaEuro2016(teams, scores){
     return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
   }
 }
+
+
+//ES6 string addition
+function joinStrings(string1, string2){
+   // code here
+   string1.toString()
+   string2.toString()
+   return `${string1} ${string2}`
+}

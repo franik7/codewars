@@ -4413,3 +4413,10 @@ function joinStrings(string1, string2){
    string2.toString()
    return `${string1} ${string2}`
 }
+
+
+//Type of sum
+function typeOfSum(a, b) {
+  // good luck
+  return typeof(a + b)
+}

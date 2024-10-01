@@ -4462,3 +4462,20 @@ function lovefunc(flower1, flower2){
     return false
   }
 }
+
+	
+//Tidy Number (Special Numbers Series #9)
+function tidyNumber(n){
+  //your code here
+  let str = n.toString()  
+  let arr = str.split("")
+  if(arr.length === 1){
+    return true
+  }
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] > arr[i + 1]){
+      return false
+    } 
+  }
+  return true
+}

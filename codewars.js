@@ -4479,3 +4479,19 @@ function tidyNumber(n){
   }
   return true
 }
+
+
+//Regex validate PIN code
+function validatePIN (pin) {
+  //return true or false
+  let str = pin.toString()
+  if(str.length === 4 || str.length === 6){
+    let arr = str.split("")
+      for(let i = 0;i<arr.length;i++){
+        if(isNaN(parseInt(arr[i]))){
+          return false
+        } 
+    } return true
+  }
+  return false
+}

@@ -4495,3 +4495,10 @@ function validatePIN (pin) {
   }
   return false
 }
+
+
+//Grasshopper - Terminal game move function
+function move (position, roll) {
+  // return the new position
+  return position + roll * 2
+}

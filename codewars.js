@@ -4502,3 +4502,18 @@ function move (position, roll) {
   // return the new position
   return position + roll * 2
 }
+
+
+//Most digits
+function findLongest(array){
+  // code here
+  let length = 0
+  let value = 0
+  for(let i = 0; i<array.length; i++){
+    let str = String(array[i])
+    if(str.length > length){
+      length = str.length
+      value = array[i]
+    } 
+  } return value
+}

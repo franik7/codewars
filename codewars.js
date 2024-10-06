@@ -4517,3 +4517,18 @@ function findLongest(array){
     } 
   } return value
 }
+
+
+//Expressions Matter
+function expressionMatter(a, b, c) {  
+  let ab = a*(b+c)
+  let bc = (a+b)*c
+  let ac = a+b*c
+  let mult = a*b*c
+  let sum = a+b+c
+  
+  let arr = []
+  arr.push(ab, bc, ac, mult, sum)
+  
+  return(Math.max(...arr));
+}

@@ -4529,6 +4529,21 @@ function expressionMatter(a, b, c) {
   
   let arr = []
   arr.push(ab, bc, ac, mult, sum)
-  
+	
   return(Math.max(...arr));
+}
+
+
+//Remove the time
+function shortenToDate(longDate) {
+  // your code here
+  let arr = longDate.split("")
+  let newArr = []
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] != ","){
+      newArr.push(arr[i])
+    } else if(arr[i] == ","){
+      break
+    }
+  } return newArr.join("")
 }

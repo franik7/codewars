@@ -4547,3 +4547,24 @@ function shortenToDate(longDate) {
     }
   } return newArr.join("")
 }
+
+
+//Fix string case
+function solve(s){
+    //..
+  let arr = s.split("")
+  let lowerArr = []
+  let upperArr = []
+  for(let i =0;i<arr.length;i++){
+    if(arr[i] === arr[i].toLowerCase()){
+      lowerArr.push(arr[i])
+    } else {
+      upperArr.push(arr[i])
+    }
+  } 
+  if(lowerArr.length >= upperArr.length){
+    return s.toLowerCase()
+  } else {
+    return s.toUpperCase()
+  }
+}

@@ -4579,3 +4579,18 @@ function maxDiff(list) {
   let sorted = list.sort((a,b)=> a-b)
   return (sorted[sorted.length-1] - sorted[0])
 };
+
+
+//ASCII Total
+function uniTotal (string) {
+// total up dem unicodes!
+  if(string.length === 0 || !string){
+    return 0
+  } 
+  let arr = string.split("")
+  let sum = 0
+  for(let i = 0; i<arr.length;i++){
+    sum = sum + arr[i].charCodeAt()
+  }
+  return sum
+}

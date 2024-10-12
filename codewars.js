@@ -4594,3 +4594,13 @@ function uniTotal (string) {
   }
   return sum
 }
+
+	
+//Maximum Triplet Sum (Array Series #7)
+function maxTriSum(numbers){
+  //your code here
+  let set = new Set(numbers)
+  let arrayWithSpread = [...set]
+  let sorted = arrayWithSpread.sort((a,b) => b - a)
+  return sorted[0] + sorted[1] + sorted[2]
+ }

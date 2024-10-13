@@ -4604,3 +4604,22 @@ function maxTriSum(numbers){
   let sorted = arrayWithSpread.sort((a,b) => b - a)
   return sorted[0] + sorted[1] + sorted[2]
  }
+
+
+//Power of two
+function isPowerOfTwo(n){
+  //.. should return true or false ..
+
+if(n === 0){
+  return false
+} else if(n===1){
+  return true
+}
+  
+for(let i = 0;i<n;i++){
+  if(Math.pow(2,i) === n){
+    return true
+  }
+}
+return false
+}

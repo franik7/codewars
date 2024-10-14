@@ -4623,3 +4623,13 @@ for(let i = 0;i<n;i++){
 }
 return false
 }
+
+	
+//Parse float
+function parseF(s) {
+  if(typeof(s) === "number" || typeof(s) === "string" && Number(s) / 1 == s){
+    return Number(s)
+  } else {
+    return null
+  }
+}

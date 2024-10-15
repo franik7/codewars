@@ -4633,3 +4633,19 @@ function parseF(s) {
     return null
   }
 }
+
+	
+//simple calculator
+function calculator(a,b,sign){
+  if (sign == "+" && Number(a) == a && Number(b) == b) {
+    return a + b
+  } else if (sign == "-" && Number(a) == a && Number(b) == b) {
+    return a - b
+  } else if (sign == "*" && Number(a) == a && Number(b) == b) {
+    return a * b
+  } else if (sign == "/" && Number(a) == a && Number(b) == b) {
+    return a / b
+  } else {
+    return "unknown value"
+  }
+}

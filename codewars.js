@@ -4649,3 +4649,26 @@ function calculator(a,b,sign){
     return "unknown value"
   }
 }
+
+	
+//Sort Out The Men From Boys
+function menFromBoys(arr){
+  //your code here
+  let men = [] //men
+  let boys = [] // boys
+  for(let i=0;i<arr.length;i++){
+    if(arr[i] % 2 == 0){
+      men.push(arr[i])
+    } else {
+      boys.push(arr[i])
+    }
+  }
+  let sortedMen = men.sort((a, b) => a - b)
+  let sortedBoys = boys.sort((a, b) => b - a)
+  
+  let joined = sortedMen.concat(sortedBoys)
+  const set = new Set(joined)
+  let joinedWoutDups = Array.from(set)
+  
+  return joinedWoutDups 
+}

@@ -4672,3 +4672,13 @@ function menFromBoys(arr){
   
   return joinedWoutDups 
 }
+
+
+//Sort the Gift Code
+function sortGiftCode(code){
+  //TODO 
+  let arr = code.split("")
+  let sorted = arr.sort()
+  let str = sorted.join("")
+  return str
+}

@@ -4682,3 +4682,21 @@ function sortGiftCode(code){
   let str = sorted.join("")
   return str
 }
+
+	
+//Even numbers in an array
+function evenNumbers(array, number) {
+  let count = 0
+  let newArr = []
+  for(let i = array.length - 1; i>=0; i--){
+    if(array[i] % 2 == 0){
+      newArr.push(array[i])
+      count++
+      if(count == number){
+        break
+      } 
+    }
+  } 
+  let reversed = newArr.reverse()
+  return reversed
+}

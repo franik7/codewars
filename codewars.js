@@ -4717,3 +4717,10 @@ function solution(str, ending){
   // TODO: complete
   return str.endsWith(ending)
 }
+
+	
+//Parse nice int from char problem
+function getAge(inputString){
+// return the girl's correct age as an integer. Happy coding :) 
+  return Number(inputString[0])
+}

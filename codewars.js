@@ -4724,3 +4724,15 @@ function getAge(inputString){
 // return the girl's correct age as an integer. Happy coding :) 
   return Number(inputString[0])
 }
+
+
+//A Strange Trip to the Market
+function isLockNessMonster(s) {
+  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+  let arr = s.split(" ")
+  if(arr.includes("$3.50") || arr.includes("tree")){
+    return true
+  } else {
+    return false
+  }
+}

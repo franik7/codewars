@@ -4736,3 +4736,24 @@ function isLockNessMonster(s) {
     return false
   }
 }
+
+	
+//Factorial
+function factorial(n){
+  if(n == 0){
+    return 1
+  } else if(n<0 || n > 12){
+    throw new RangeError();
+  }
+  
+  let newArr = []
+  for(let i = 1; i<=n;i++){
+    newArr.push(i)
+  }
+  let initialValue = 1 
+  let factorial = newArr.reduce(
+  (accumulator, currentValue) => accumulator * currentValue,
+  initialValue,
+);
+  return factorial
+}

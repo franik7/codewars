@@ -4779,3 +4779,20 @@ function factorial(n){
 );
   return factorial
 }
+
+	
+//Two to One
+function longest(s1, s2) {
+  // your code
+
+  let arr1 = s1.split("")
+  let arr2 = s2.split("")
+  
+  let combined = arr1.concat(arr2);
+  let sorted = combined.sort()
+  let set = new Set(sorted)
+  let arr11 = Array.from(set)
+
+  return arr11.join("")
+  
+}

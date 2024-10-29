@@ -4794,5 +4794,23 @@ function longest(s1, s2) {
   let arr11 = Array.from(set)
 
   return arr11.join("")
+}
+
+
+//Sorted? yes? no? how?
+function isSortedAndHow(array) {
   
+  let arrAscCopy = [...array];
+  let arrDescCopy = [...array];
+  
+  let ascSorted = arrAscCopy.sort((a,b)=>a-b)
+  let descSorted = arrDescCopy.sort((a,b)=>b-a)
+    
+  if(array.join("").localeCompare(ascSorted.join("")) == 0){
+    return "yes, ascending"
+  } else if(array.join("").localeCompare(descSorted.join("")) == 0){
+    return "yes, descending"
+  } else {
+    return "no"
+  }
 }

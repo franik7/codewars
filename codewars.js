@@ -4814,3 +4814,16 @@ function isSortedAndHow(array) {
     return "no"
   }
 }
+
+
+//All Star Code Challenge #18
+function strCount(str, letter){  
+  //code here
+  let arr = str.split("")
+  let count = 0
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] == letter){
+      count++
+    }
+  } return count
+}

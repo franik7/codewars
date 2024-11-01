@@ -4827,3 +4827,18 @@ function strCount(str, letter){
     }
   } return count
 }
+
+	
+//Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+function remove (string) {
+  //coding and coding....
+  let arr = string.split("")
+  let newArr = []
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] === "!"){
+      
+    } else {
+      newArr.push(arr[i])
+    }
+  } return newArr.join("") + "!"
+}

@@ -4842,3 +4842,13 @@ function remove (string) {
     }
   } return newArr.join("") + "!"
 }
+
+	
+//Form The Minimum
+function minValue(values){
+  //your code here
+  let set = new Set(values)
+  let values2 = [...set]
+  let sorted = values2.sort((a,b) => a - b)
+  return Number(sorted.join(""))
+}

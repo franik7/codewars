@@ -4852,3 +4852,12 @@ function minValue(values){
   let sorted = values2.sort((a,b) => a - b)
   return Number(sorted.join(""))
 }
+
+
+function stairsIn20(s){
+  //your code here
+  let arr = [].concat(...s)
+  let sum = arr.reduce(
+  (accumulator, currentValue) => accumulator + currentValue)
+  return sum * 20
+}/How many stairs will Suzuki climb in 20 years?

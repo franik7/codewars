@@ -4861,3 +4861,19 @@ function stairsIn20(s){
   (accumulator, currentValue) => accumulator + currentValue)
   return sum * 20
 }/How many stairs will Suzuki climb in 20 years?
+
+
+//V A P O R C O D E
+function vaporcode(string) {
+  let upped = string.toUpperCase()
+  let newArr = []
+  let arr = upped.split("")
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] != " "){
+      newArr.push(arr[i])
+      newArr.push("  ")
+      } else {
+        
+      }
+  } return newArr.join("").slice(0, -2)
+}

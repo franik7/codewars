@@ -4877,3 +4877,34 @@ function vaporcode(string) {
       }
   } return newArr.join("").slice(0, -2)
 }
+
+
+//Alternate capitalization
+function capitalize(s){
+
+  let arr = s.split("")
+
+  let evenArr = []
+  let oddArr = []
+  let finalArr = []
+  
+  for(let i = 0; i < arr.length; i++){
+    if(i % 2 == 0){
+      evenArr.push(arr[i].toUpperCase())
+    } else {
+      evenArr.push(arr[i].toLowerCase())
+    }
+  }
+  for(let j = 0; j < arr.length; j++){
+    if(j % 2 != 0){
+      oddArr.push(arr[j].toUpperCase())
+    } else {
+      oddArr.push(arr[j].toLowerCase())
+    }
+    }
+  
+  finalArr.push(evenArr.join(""))
+  finalArr.push(oddArr.join(""))
+  
+  return finalArr
+}

@@ -4915,3 +4915,9 @@ function getASCII(c){
   // ...
     return c.codePointAt();
 }
+
+
+//Convert to Binary
+function toBinary(n){
+   return Number(n.toString(2))
+}

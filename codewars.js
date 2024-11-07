@@ -4908,3 +4908,10 @@ function capitalize(s){
   
   return finalArr
 }
+
+
+//get ascii value of character
+function getASCII(c){
+  // ...
+    return c.codePointAt();
+}

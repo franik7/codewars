@@ -4942,3 +4942,19 @@ function pointsPer48(ppg, mpg) {
   let mins = PPGper48.toFixed(1)
   return parseFloat(mins)
 }
+
+
+//Geometry Basics: Distance between points in 2D
+function distanceBetweenPoints(a, b) {
+
+  let array1 = Object.values(a) 
+  let array2 = Object.values(b) 
+  
+  //   d = √[(x2 − x1)2 + (y2 − y1)2]
+  
+  let first = Math.pow(array2[0] - array1[0], 2)
+  let second = Math.pow(array2[1] - array1[1], 2)
+  let distance = Math.sqrt(first + second)
+  
+  return distance
+}

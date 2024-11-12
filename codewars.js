@@ -4931,3 +4931,14 @@ function chromosomeCheck(sperm) {
     return "Congratulations! You're going to have a daughter."
   }
 }
+
+
+//NBA full 48 minutes average
+function pointsPer48(ppg, mpg) {
+  if(mpg == 0){
+    return 0
+  }
+  let PPGper48 = ppg * 48 / mpg
+  let mins = PPGper48.toFixed(1)
+  return parseFloat(mins)
+}

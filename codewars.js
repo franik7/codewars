@@ -4966,3 +4966,20 @@ function squareArea(A){
   return Number((area*area).toFixed(2))
 }
 
+	
+//Check same case
+function sameCase(a, b) {
+  let letters = /^[A-Za-z]+$/;
+
+  if (!letters.test(a) || !letters.test(b)) {
+    return -1;
+  } else if (a.toUpperCase() == a && b.toUpperCase() == b) {
+    return 1;
+  } else if (a.toLowerCase() == a && b.toLowerCase() == b) {
+    return 1;
+  } else if (a.toUpperCase() == a && b.toLowerCase() == b) {
+    return 0;
+  } else if (a.toLowerCase() == a && b.toUpperCase() == b) {
+    return 0;
+  }
+}

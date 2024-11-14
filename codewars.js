@@ -4958,3 +4958,11 @@ function distanceBetweenPoints(a, b) {
   
   return distance
 }
+
+	
+//Area of a Square
+function squareArea(A){
+  let area = (A * 4) / (2 * Math.PI)
+  return Number((area*area).toFixed(2))
+}
+

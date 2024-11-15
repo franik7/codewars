@@ -4983,3 +4983,20 @@ function sameCase(a, b) {
     return 0;
   }
 }
+
+
+//Freudian translator
+function toFreud(string) {
+
+if(string.length == 0){
+  return ""
+}
+  
+let arr = string.split(" ")
+let newArr = []
+
+for(let i = 0;i<arr.length;i++){
+  newArr.push("sex")
+}
+  return newArr.join(" ")
+}

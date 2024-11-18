@@ -5000,3 +5000,16 @@ for(let i = 0;i<arr.length;i++){
 }
   return newArr.join(" ")
 }
+
+	
+//Regex count lowercase letters
+function lowercaseCount(str){
+    //How many?
+    let arr = str.split("")
+    let newArr = []
+    for(let i = 0;i<arr.length;i++){
+      if(arr[i].toUpperCase() != arr[i]){
+        newArr.push(arr[i])
+      } 
+    } return newArr.length
+}

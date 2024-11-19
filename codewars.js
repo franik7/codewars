@@ -5013,3 +5013,16 @@ function lowercaseCount(str){
       } 
     } return newArr.length
 }
+
+
+//Nth Smallest Element (Array Series #4)
+function nthSmallest(arr, pos){
+  //your code here
+  let sorted = arr.sort((a,b) => a - b)
+  
+  for(let i = 0; i<sorted.length; i++){
+    if(i + 1 === pos){
+      return sorted[i]
+    }
+  }
+}

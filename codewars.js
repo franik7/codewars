@@ -5052,3 +5052,33 @@ function calc(x){
   let total3 = sumTotal1Arr - sumReplaced
   return total3
 }
+
+
+//Incrementer
+function incrementer(nums) { 
+  // code goes here
+
+  let newArr = []
+  for(let i = 0;i<nums.length;i++){
+    newArr.push(nums[0] + 1)
+    newArr.push(nums[i] + i + 1)
+  }
+  
+  let newArr2 = []
+  for(let j = 0;j<newArr.length;j++){
+    if(j % 2 != 0){
+      newArr2.push(newArr[j])
+    }
+  }
+  
+  let newArr3 = []
+  for(let k = 0;k<newArr2.length;k++){
+    if(newArr2[k].toString().length == 1){
+      newArr3.push(newArr2[k])
+    } else {
+      let x = newArr2[k].toString().slice(-1)
+      newArr3.push(Number(x))
+    }
+  }
+  return newArr3
+}

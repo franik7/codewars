@@ -5026,3 +5026,29 @@ function nthSmallest(arr, pos){
     }
   }
 }
+
+
+//Char Code Calculation
+function calc(x){
+
+  let array = x.split("")
+
+  let newArr = []
+  
+  for(let i = 0;i<array.length;i++){
+    newArr.push(array[i].charCodeAt(0))
+  } 
+  
+  let total1 = newArr.join("")
+  
+  let total2 = total1.replaceAll(7, 1)
+  
+  let total1Arr = total1.split("")
+  let replacedArr = total2.split("")
+  
+  const sumTotal1Arr = total1Arr.reduce((accumulator1, currentValue1) => Number(accumulator1) + Number(currentValue1),0)
+  const sumReplaced = replacedArr.reduce((accumulator2, currentValue2) => Number(accumulator2) + Number(currentValue2),0)
+    
+  let total3 = sumTotal1Arr - sumReplaced
+  return total3
+}

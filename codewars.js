@@ -5082,3 +5082,9 @@ function incrementer(nums) {
   }
   return newArr3
 }
+
+
+//Grasshopper - Order of operations
+function orderOperations () {
+  return (2 + 2) * (2 + 2) * 2
+}

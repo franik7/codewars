@@ -5088,3 +5088,36 @@ function incrementer(nums) {
 function orderOperations () {
   return (2 + 2) * (2 + 2) * 2
 }
+
+	
+//Polish alphabet
+function correctPolishLetters (string) {
+  // your code
+  let newArr = []
+  let arr = string.split("")
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i] == "ą"){
+      newArr.push("a")
+    } else if(arr[i] == "ć"){
+        newArr.push("c")
+    } else if(arr[i] == "ę"){
+        newArr.push("e")
+    } else if(arr[i] == "ł"){
+        newArr.push("l")
+    } else if(arr[i] == "ń"){
+        newArr.push("n")
+    } else if(arr[i] == "ó"){
+        newArr.push("o")
+    } else if(arr[i] == "ś"){
+        newArr.push("s")
+    } else if(arr[i] == "ć"){
+        newArr.push("c")
+    } else if(arr[i] == "ź"){
+        newArr.push("z")
+    } else if(arr[i] == "ż"){
+        newArr.push("z")
+    } else {
+      newArr.push(arr[i])
+    }    
+  } return newArr.join("")
+}

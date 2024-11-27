@@ -5134,3 +5134,25 @@ function findUniq(arr) {
     return sorted[0]
   }
 }
+
+	
+//Minimum Steps (Array Series #6)
+function minimumSteps(numbers, value){
+  //your code here
+  let sorted = numbers.sort((a,b) => a - b)
+  
+  if(sorted[0] >= value){
+    return 0
+  }
+  if(sorted[0] + sorted[1] >= value){
+    return 1
+  }
+	
+  let sum = 0
+  for(let i=0;i<sorted.length;i++){
+    sum = sum+sorted[i]
+    if(sum >= value){
+      return i 
+    }
+  }
+}

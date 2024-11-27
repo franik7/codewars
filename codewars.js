@@ -5121,3 +5121,16 @@ function correctPolishLetters (string) {
     }    
   } return newArr.join("")
 }
+
+
+//Find the unique number
+function findUniq(arr) {
+  // do magic
+  let sorted = arr.sort((a, b) => a - b)
+  
+  if(sorted[0] == sorted[1]){
+    return sorted[sorted.length - 1]
+  } else {
+    return sorted[0]
+  }
+}

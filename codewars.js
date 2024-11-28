@@ -5156,3 +5156,33 @@ function minimumSteps(numbers, value){
     }
   }
 }
+
+	
+//Automorphic Number (Special Numbers Series #6)
+function automorphic(n){
+  //your code here
+  let squared = n * n
+  let stringedNum = n.toString()
+  let stringedSquared = squared.toString()
+  
+  let numArr = stringedNum.split("")
+  let squarArr = stringedSquared.split("")
+
+  let newNumArr = []
+  for(let i = squarArr.length-1;i>=0;i--){
+    if(newNumArr.length < numArr.length){
+      newNumArr.unshift(squarArr[i])
+    }
+    
+    let numStr = numArr.join("")
+    let numSq = newNumArr.join("")
+    
+    let num2 = Number(numStr)
+    let numSq2 = Number(numSq)
+    
+    if(num2 == numSq2){
+      return "Automorphic"
+    }
+  }
+  return "Not!!"
+}

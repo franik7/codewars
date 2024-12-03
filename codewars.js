@@ -5186,3 +5186,13 @@ function automorphic(n){
   }
   return "Not!!"
 }
+
+
+//Thinkful - Number Drills: Blue and red marbles
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  // Your code here.
+  let blueRemaining = blueStart-bluePulled
+  let redRemaining = redStart-redPulled
+  
+  return blueRemaining/(blueRemaining+redRemaining)
+}

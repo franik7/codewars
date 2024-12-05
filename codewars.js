@@ -5203,3 +5203,22 @@ function integrate(coefficient, exponent) {
   return coefficient/(exponent + 1)+ 'x^' + (exponent+1)
 }
 
+	
+//Product Of Maximums Of Array (Array Series #2)
+function maxProduct(numbers, size){
+  //your code here
+ 
+  let sorted = numbers.sort(( a, b) => b - a)
+  console.log(sorted)
+  let newArr = []
+  for(let i = 0; i<=size-1;i++){
+    newArr.push(sorted[i])
+  }
+  let initialValue = 1;
+  let product = newArr.reduce(
+  (accumulator, currentValue) => accumulator * currentValue,
+  initialValue,
+  )
+  return product
+}
+

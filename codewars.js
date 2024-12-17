@@ -5237,3 +5237,39 @@ function century(year) {
     return Math.ceil(year / 100)
   } 
 }
+
+
+//Simple string characters
+function solve(s){
+ //..
+  
+  if(s.length == 0){
+    return [0, 0, 0, 0]
+  }
+  
+  let arr = s.split("")
+  console.log(arr)
+ 
+  let upperCase = []
+  let lowerCase = []
+  let nums = []
+  let specialChars = []
+  let finalArr = []
+  
+  for(let i = 0; i<arr.length;i++){
+    if(arr[i] == 0 || arr[i] == 1 || arr[i] == 2 || arr[i] == 3 || arr[i] == 4 || arr[i] == 5 || arr[i] == 6 || arr[i] == 7 || arr[i] == 8 || arr[i] == 9){
+      nums.push(arr[i])
+    } else if(arr[i] == "!" || arr[i] == "?" || arr[i] == "." || arr[i] == "," || arr[i] == "*" || arr[i] == "@" || arr[i] == "<" 
+              || arr[i] == "-"  || arr[i] == ">"  || arr[i] == "%"  || arr[i] == "="  || arr[i] == "$"  || arr[i] == "'"  || arr[i] == "&" 
+              || arr[i] == '('  || arr[i] == ')'  || arr[i] == "\\"  || arr[i] == "["  || arr[i] == "]"  || arr[i] == '"'  
+              || arr[i] == "_"  || arr[i] == "#"  || arr[i] == "|"  || arr[i] == "/"  || arr[i] == "`"  || arr[i] == "~"  || arr[i] == "{"  
+              || arr[i] == "}"  || arr[i] == "+"  || arr[i] == ":"  || arr[i] == ";"  || arr[i] == "^"){
+      specialChars.push(arr[i])
+    } else if (arr[i] == arr[i].toUpperCase()){
+      upperCase.push(arr[i])
+    } else {
+      lowerCase.push(arr[i])
+    }
+  }   
+  return [upperCase.length, lowerCase.length, nums.length, specialChars.length]
+}

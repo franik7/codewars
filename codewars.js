@@ -5227,3 +5227,13 @@ function maxProduct(numbers, size){
 // add the value "codewars" to the already defined websites array
 websites.push("codewars")
 
+
+//Century From Year
+function century(year) {
+  // Finish this :)
+  if((year / 100) === Math.round(year / 100)){
+     return year/100
+  } else {
+    return Math.ceil(year / 100)
+  } 
+}

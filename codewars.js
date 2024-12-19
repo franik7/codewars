@@ -5294,3 +5294,13 @@ function min(arr, toReturn) {
     return newArr[1]
   }
 }
+
+
+//Is your period late?
+function periodIsLate(last, today, cycleLength) {
+  if((today/(1000*60*60*24)) - (last/(1000*60*60*24)) > cycleLength){
+    return true
+  } else {
+    return false
+  }
+}

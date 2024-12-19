@@ -5273,3 +5273,24 @@ function solve(s){
   }   
   return [upperCase.length, lowerCase.length, nums.length, specialChars.length]
 }
+
+
+//Smallest value of an array
+function min(arr, toReturn) { 
+  let arrCopy = [...arr];
+  let sorted = arrCopy.sort((a,b) => a - b)
+  let newArr = []
+      
+   for(let i = 0; i<arr.length; i++){
+     if(arr[i] == sorted[0]){
+       newArr.push(arr[i])
+       newArr.push(i)
+     }
+   }
+  
+  if(toReturn === "value"){
+    return newArr[0]
+  } else {
+    return newArr[1]
+  }
+}

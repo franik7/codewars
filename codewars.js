@@ -5315,3 +5315,17 @@ for(let i = 0;i<power;i++){
 }
   return product
 }
+
+
+//Localize The Barycenter of a Triangle
+function barTriang(p1, p2, p3){
+  //your code here
+  
+  let x = (p1[0] + p2[0] + p3[0])/3
+  let y = (p1[1] + p2[1] + p3[1])/3
+  
+  let x0 = x.toFixed(4)
+  let y0 = y.toFixed(4)
+  
+  return [Number(x0), Number(y0)]
+}

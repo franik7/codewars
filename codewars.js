@@ -5329,3 +5329,14 @@ function barTriang(p1, p2, p3){
   
   return [Number(x0), Number(y0)]
 }
+
+
+//Simple Comparison?
+function add(a, b){
+	// code here
+if(a == b){
+    return true
+  } else {
+    return false
+  }
+}

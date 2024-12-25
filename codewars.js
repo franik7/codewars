@@ -5340,3 +5340,15 @@ if(a == b){
     return false
   }
 }
+
+
+//validate code with simple regex
+function validateCode (code) {
+//your code here
+  let code2 = code.toString()
+  if(code2[0] == 1 || code2[0] == 2 || code2[0] == 3){
+    return true
+  } else {
+    return false
+  }
+}

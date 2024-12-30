@@ -5352,3 +5352,24 @@ function validateCode (code) {
     return false
   }
 }
+
+
+//Help the Fruit Guy
+function removeRotten(bagOfFruits) {
+  if (bagOfFruits == undefined) {
+    return [];
+  }
+
+  let newBag = [];
+  for (let i = 0; i < bagOfFruits.length; i++) {
+    if (bagOfFruits[i].includes("rotten")) {
+      let freshFruit = bagOfFruits[i].split("rotten");
+      newBag.push(freshFruit[1].toLowerCase());
+    } else {
+      newBag.push(bagOfFruits[i]);
+    }
+  }
+
+  return newBag;
+}
+

@@ -5384,3 +5384,22 @@ function excludingVatPrice(price){
     return price / 1.15
   }
 }
+
+
+//Basic Calculator
+function calculate(num1, operation, num2) {
+ //TODO: make a basic calculator. 
+  if(operation == "+"){
+    return num1 + num2
+  } else if(operation == "-"){
+    return num1 - num2
+  }else if(operation == "*"){
+    return num1 * num2
+  } else if(operation == "/" && num2 == 0){
+    return null
+  } else if(operation == "/"){
+    return num1 / num2
+  } else {
+    return null
+  }
+}

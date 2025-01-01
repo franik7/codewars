@@ -5373,3 +5373,14 @@ function removeRotten(bagOfFruits) {
   return newBag;
 }
 
+
+//Calculate Price Excluding VAT
+//return price without vat
+function excludingVatPrice(price){
+  // your code
+  if(price == null){
+    return -1
+  } else {
+    return price / 1.15
+  }
+}

@@ -5403,3 +5403,10 @@ function calculate(num1, operation, num2) {
     return null
   }
 }
+
+
+//Sum of angles
+function angle(n) {
+  //code here
+  return (n - 2) * 180
+}	

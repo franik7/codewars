@@ -5410,3 +5410,25 @@ function angle(n) {
   //code here
   return (n - 2) * 180
 }	
+
+
+//Duplicate Encoder
+function duplicateEncode(word){
+    console.log(word)
+    word = word.toLowerCase()
+    let arr = word.split("")
+    
+    let checkArr = []
+    let newArr = []
+    
+    for(let i = 0;i<arr.length;i++){
+      for(let j = 0;j<arr.length;j++){
+        if(arr[i] === arr[j]){
+          newArr.push(arr[i].replaceAll("("))
+        }
+        
+        
+    
+      }
+    } return newArr
+}

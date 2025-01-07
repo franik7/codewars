@@ -5427,8 +5427,7 @@ function duplicateEncode(word){
           newArr.push(arr[i].replaceAll("("))
         }
         
-        
-    
+         
       }
     } return newArr
 }

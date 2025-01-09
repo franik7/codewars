@@ -5412,6 +5412,21 @@ function angle(n) {
 }	
 
 
+//Return Two Highest Values in List
+function twoHighest(arr) {
+  const set = new Set(arr)
+  let arr2 = Array.from(set);
+  if(arr2.length < 1){
+    return []
+  } else if (arr2.length == 1){
+    return [arr2[0]]
+  } else {
+    let sorted = arr2.sort((a, b) => b - a)
+  return [sorted[0], sorted[1]]
+  } 
+}
+
+	
 //Duplicate Encoder
 function duplicateEncode(word){
     console.log(word)

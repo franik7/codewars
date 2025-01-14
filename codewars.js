@@ -5446,3 +5446,23 @@ function duplicateEncode(word){
       }
     } return newArr
 }
+
+	
+//Folding your way to the moon
+function foldTo(distance) {  
+  let thickness = 0.0001
+  if(distance < 0){
+    return null
+  } else if(distance <= 0.0001){
+    return 0
+  } else { 
+  let count = 0
+  for(let i = 0; i<=1000;i++){
+    count++
+    thickness = thickness * 2
+    if(thickness >= distance){
+      return i + 1 
+    }
+  }
+  } 
+}
